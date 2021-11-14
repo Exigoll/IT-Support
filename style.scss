@@ -77,8 +77,6 @@ li {
   &__object {
     color: #d4770c;
   }
-  &__class {
-  }
   &__example {
     font-style: italic;
   }
@@ -150,9 +148,6 @@ li {
 } */
 //? Header
 .header {
-  &__nav {
-    
-  }
   &__list {
     display: flex;
     flex-direction: row;
@@ -164,8 +159,5 @@ li {
   }
   &__item:hover {
     color: #7e75e6;
-  }
-  &__link {
-
   }
 }
