@@ -116,17 +116,17 @@ li {
     &__example-exception {
       display: block;
       max-width: 350px;
-      border: 2px solid rgb(0, 255, 255);
-      color: rgb(0, 247, 255);
-      background-color: rgba(0, 255, 255, 0.267);
+      border: 2px solid rgb(175, 0, 255);
+      color: rgb(175, 0, 255);
+      background-color: rgba(174, 0, 255, 0.452);
       border-radius: 10px;
     }
     &__task {
       display: block;
       max-width: 350px;
-      border: 2px solid rgb(140, 0, 255);
-      color: rgb(140, 0, 255);
-      background-color: rgba(140, 0, 255, 0.445);
+      border: 2px solid rgb(0, 255, 255);
+      color: rgb(0, 247, 255);
+      background-color: rgba(0, 255, 255, 0.267);
       border-radius: 10px;
     }
     &__application {
