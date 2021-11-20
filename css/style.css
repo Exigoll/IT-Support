@@ -54,21 +54,6 @@ li {
   font-weight: 700;
 }
 
-.style__definition {
-  padding-left: 10px;
-  color: #7e75e6;
-  border-left: 8px solid #7e75e6;
-  border-radius: 10px;
-  background-color: #b39ddb7a;
-  max-width: 200px;
-}
-
-.style__definition::before {
-  content: '\221E';
-  padding-right: 20px;
-  padding-left: 5px;
-}
-
 .style__datatype {
   color: #607d8b;
 }
@@ -101,69 +86,35 @@ li {
   font-style: italic;
 }
 
-.style__rules {
-  border-left: 8px solid #4233ec;
-  border-radius: 10px;
-  background-color: #42a4f571;
-  font-weight: 700;
-  max-width: 350px;
-  margin-bottom: 5px;
+.style__definition {
+  padding-left: 10px;
+  color: #7e75e6;
+  border-left: 8px solid #7e75e6;
 }
 
-.style__rules::before {
-  content: '\1F4D8';
-  padding-right: 20px;
-  padding-left: 5px;
+.style__rules {
+  padding-left: 10px;
+  color: #42a5f5;
+  border-left: 8px solid #42a5f5;
 }
 
 .style__error {
-  border-left: 8px solid #db8513;
-  border-radius: 10px;
-  background-color: #fda53977;
-  font-weight: 700;
-  max-width: 480px;
-}
-
-.style__error::before {
-  content: '\274C';
-  padding-right: 20px;
-  padding-left: 5px;
-}
-
-.style__example-error {
-  display: block;
-  max-width: 350px;
-  border: 2px solid #ff5100;
-  color: #ff5100;
-  background-color: rgba(255, 81, 0, 0.322);
-  border-radius: 10px;
-}
-
-.style__example-exception {
-  display: block;
-  max-width: 350px;
-  border: 2px solid #af00ff;
-  color: #af00ff;
-  background-color: rgba(174, 0, 255, 0.452);
-  border-radius: 10px;
+  padding-left: 10px;
+  color: #ff6b00;
+  border-left: 8px solid #ff6b00;
 }
 
 .style__task {
-  display: block;
-  max-width: 350px;
-  border: 2px solid cyan;
-  color: #00f7ff;
-  background-color: rgba(0, 255, 255, 0.267);
-  border-radius: 10px;
+  padding-left: 10px;
+  color: #3dca43;
+  border-left: 8px solid #3dca43;
 }
 
 .style__application {
-  display: block;
-  max-width: 350px;
-  border: 2px solid #00c400;
-  color: #00c400;
-  background-color: rgba(0, 255, 0, 0.356);
-  border-radius: 10px;
+  padding-left: 10px;
+  color: #42a5f5;
+  border: 2px solid #42a5f5;
+  background-color: #7e75e652;
 }
 
 /* li {
