@@ -89,9 +89,9 @@ li {
   }
   &__application {
     padding-left: 10px;
-    color: #42a5f5;
-    border: 2px solid #42a5f5;
-    background-color: #7e75e652;
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
+    background-color: #00bbd43b;
   }
 }
 /* li {
@@ -102,18 +102,3 @@ li {
   color: #BC62AD;
   color: #3585bb;
 } */
-//? Header
-.header {
-  &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  &__item {
-    list-style-type: none;
-    transition: all .5s;
-  }
-  &__item:hover {
-    color: #7e75e6;
-  }
-}
