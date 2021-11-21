@@ -106,15 +106,13 @@ li {
 
 .style__task {
   padding-left: 10px;
-  color: #3dca43;
-  border-left: 8px solid #3dca43;
+  color: #8bc34a;
+  border-left: 8px solid #8bc34a;
 }
 
 .style__application {
   padding-left: 10px;
   color: #00bcd4;
-  border: 2px solid #00bcd4;
-  background-color: #00bbd43b;
 }
 
 /* li {
