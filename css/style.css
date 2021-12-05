@@ -168,8 +168,28 @@ li {
   color: #BC62AD;
   color: #3585bb;
 } */
-.garold {
-  border: 20px solid #000;
+.task__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.task__item {
+  font-size: 28px;
+  font-weight: 700;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.task__item + .task__item {
+  padding-left: 40px;
+}
+
+.task__item:hover {
+  color: aquamarine;
 }
 
 .garold > img {

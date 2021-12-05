@@ -75,16 +75,14 @@ li {
     text-align: justify;
   }
 }
-
-
-
-//? color
 .style-notion {
   color: rgb(106, 13, 194);
   letter-spacing: 2px;
   font-weight: 900;
 }
 
+
+//? Section: Design
 .design {
   &__list {
   }
@@ -150,9 +148,30 @@ li {
   color: #BC62AD;
   color: #3585bb;
 } */
+
+//? Section: JS TASK
+.task {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    font-size: 28px;
+    font-weight: 700;
+    transition: all .5s;
+  }
+  &__item + &__item {
+    padding-left: 40px;
+  }
+  &__item:hover {
+    color: aquamarine;
+  }
+  &__link {
+  }
+}
+
 //? Other
 .garold {
-  border: 20px solid #000;
 }
 .garold > img {
   width: 100%;
