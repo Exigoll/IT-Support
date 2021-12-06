@@ -56,6 +56,170 @@
 				</ul>
 			</div>
 		</section>
+		<section class="conditions">
+			<div class="container">
+				<div class="task">
+					<p class="task__name hiden">Задача № 1. Количество секунд.</p>
+					<p class="task__text">Выведите в консоль следующие значения:</p>
+					<p class="task__text">1. Количество секунд в сутках</p>
+					<p class="task__text">2. Количество секунд в 30 сутках</p>
+					<p class="task__text">3. Количество секунд в году</p>
+					<p class="task__text">4. Количество минут в сутках</p>
+					<p class="task__text">5. Количество минут в году</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+const minute = 60
+const hour = minute * 60
+const day = hour * 24
+const week = day * 7
+const mounth = day * 30
+const year = mounth * 12
+
+// № 1
+console.log(day + ' seconds')  // result 86400 seconds
+
+// № 2
+console.log(day * 30 + ' seconds in 30 days')  // result 2592000 seconds in 30 days
+
+// № 3
+console.log(year + ' second in year')  // result 31104000 second in year
+
+// № 4
+console.log(day / 60 + ' minutes in day')  // result 1440 minutes in day
+
+// № 5
+console.log(day * 365 / 60 + ' minutes in year')  // result 525600  minutes in year
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name hiden">Задача № 2. Перевод в байты и наоборот.</p>
+					<p class="task__text">Выведите в консоль следующие значения:</p>
+					<p class="task__text">1. Количество байт в мегабайте</p>
+					<p class="task__text">2. Количество байт в гигабайте</p>
+					<p class="task__text">3. Количество байт в 10 гигабайтах</p>
+					<p class="task__text">4. Количество байт в терабайте</p>
+					<p class="task__text">5. Количество килобайт в терабайте</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+const kb = 1024
+const mb = kb ** 2
+const gb = kb ** 3
+const tb = kb ** 4
+	
+// № 1
+console.log(mb)
+
+// № 2
+console.log(gb)
+
+// № 3
+console.log(gb * 10)
+
+// № 4
+console.log(tb)
+
+// № 5
+console.log(tb / 1024)
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name hiden">Задача № 3. Площадь круга.</p>
+					<p class="task__text">Переменная radius содержит значение с радиусом круга равно 10. По соответствующей формуле найдите площадь круга и запишите ее в переменную square. Выведите содержимое этой переменной на экран.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let radius = 10 // Радиус круга 
+const π = 3.14 // константа, которая выражает отношение длины окружности к диаметру, всегда равна 3.14
+
+let square = π * radius ** 2 // формула расчете s = π * r в квадрате
+console.log(square) // 314
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name hiden">Задача № 4. Площадь прямоугольника.</p>
+					<p class="task__text">Переменные width и height содержат значения равные сторонам прямоугольника. Найдите площадь прямоугольника и запишите ее в переменную square. Выведите содержимое этой переменной в консоль.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let width = 10
+let height = 15
+let square = width * height
+console.log(square) // 150
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name hiden">Задача № 5. Площадь квадрата.</p>
+					<p class="task__text">Переменная width содержит значение равное стороне квадрата. Найдите площадь квадрата и запишите ее в переменную square. Выведите содержимое этой переменной в консоль.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let width = 10
+let square = width * width
+console.log(square) // 100
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name hiden">Задача № 6. Периметр прямоугольника.</p>
+					<p class="task__text">Переменные width и height содержат значения равные сторонам прямоугольника. Найдите периметр прямоугольника и запишите его в переменную perimeter. Выведите содержимое этой переменной в консоль.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let width = 10
+let height = 4
+let perimeter = (width + height) * 2  // сумма длины и ширины умноженая на 2
+console.log(perimeter) // 28
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name hiden">Задача № 7. Из Цельсия в Фаренгейты.</p>
+					<p class="task__text">Переменная tc содержит в себе значение с температурой, в градусах Цельсия. По соответствующей формуле выполните перевод этой температуры в градусы Фаренгейта.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let tc = 40
+let tf = (tc * (9 / 5)) + 32
+console.log(tf) // 104
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name hiden">Задача № 8. Из Фарегнейты в Цельсия .</p>
+					<p class="task__text">Переменная tf содержит в себе значение с температурой, в градусах Фаренгейта. По соответствующей формуле выполните перевод этой температуры в градусы Цельсия.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let tc = 40
+let tf = (tc * (9 / 5)) + 32
+console.log(tf) // 104
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div> <!-- Finish container -->
+		</section>
   </main>
 	<script src="./js/main.js"></script>
 	<script src="./js/highlight.min.js"></script>

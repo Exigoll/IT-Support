@@ -171,12 +171,29 @@ li {
 }
 
 //? Section: Conditions
+.conditions {
+  
+}
 .task {
+  position: relative;
+  padding-top: 60px;
   &__name {
     padding-left: 10px;
     color: #8bc34a;
     font-weight: 700;
     border-left: 8px solid #8bc34a;
+  }
+  &__name::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 900px;
+    height: 3px;
+    background-color: #8bc34a;
+  }
+  &__name.hiden::after  {
+    display: none;
   }
   &__condition {
     text-indent: 1.5em;
@@ -186,11 +203,8 @@ li {
     text-indent: 1.5em;
     text-align: justify;
   }
-/*   &__solution {
-    text-indent: 1.5em;
-    text-align: justify;
-  } */
 }
+
 
 
 //? Other
@@ -201,10 +215,11 @@ li {
   height: 100%;
 }
 
+
 //? Collapsible
 .collapsible {
   width: 10%;
-  padding: 10px;  
+  padding: 10px;
   background-color: rgb(255, 255, 255);
   font-family: "Times New Roman", Times, serif;
   font-size: 24px;
@@ -215,6 +230,8 @@ li {
   outline: none;
   cursor: pointer;
 }
+
+
 .active, .collapsible:hover {
   text-decoration: underline;
   color: #8bc34a;
