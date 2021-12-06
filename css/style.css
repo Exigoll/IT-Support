@@ -250,6 +250,10 @@ li {
   height: 100%;
 }
 
+code {
+  border-radius: 10px;
+}
+
 .collapsible {
   width: 10%;
   padding: 10px;

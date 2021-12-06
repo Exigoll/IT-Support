@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <title>Conditions</title>
+	<link rel="stylesheet" href="./css/srcery.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <section class="navigation">
+      <nav class="nav">
+        <ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="./index.html">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./terms.html">Terms</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./task.html">JS Task</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./design.html">Design</a>
+					</li>
+        </ul>
+      </nav>
+    </section>
+		<section class="tasks">
+			<div class="tasks__wrapper">
+				<ul class="tasks__list">
+					<li class="tasks__item">
+						<a href="./variables.html" class="task__link">Variables</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./datatypes.html" class="task__link">Data types</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./conditions.html" class="task__link">Conditions</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./cycles.html" class="task__link">Cyclec</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./functions.html" class="task__link">Functions</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./operators.html" class="task__link">Operators</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="conditions">
+			<div class="container">
+				<div class="task">
+					<p class="task__name hiden">Задача № 1. Постфиксная и префиксная формы.</p>
+					<p class="task__text">Чему будут равны значения переменных a, b, c & d в примере ниже? Выведите результаты в консоль.</p>
+					<pre>
+						<code>
+let a = 1, b =1
+let c = ++a
+let d = b++
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log(a) // 2
+console.log(b) // 2
+console.log(c) // 2
+console.log(d) // 1
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 2. Преобразование типов.</p>
+					<p class="task__text">Не запуская код, определите какие значения выведутся в консоль.</p>
+					<pre>
+						<code>
+console.log('' + 1 + 0) 
+console.log('' - 1 + 0) 
+console.log(true + false) 
+console.log(6 / '3') 
+console.log('2' * '3') 
+console.log(4 + 5 + 'px') 
+console.log('$' + 4 + 5) 
+console.log('4' - 2) 
+console.log('4px' - 2) 
+console.log(7 / 0) 
+console.log('-9 ' + 5) 
+console.log('-9 ' - 5) 
+console.log(null + 1) 
+console.log(undefined + 1)
+console.log(' \t \n' - 2)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log('' + 1 + 0) // '10'
+console.log('' - 1 + 0) // 1
+console.log(true + false) // -1
+console.log(6 / '3') // 2
+console.log('2' * '3') // 6
+console.log(4 + 5 + 'px') // '9px'
+console.log('$' + 4 + 5) // '$45'
+console.log('4' - 2) // 2
+console.log('4px' - 2) // NaN
+console.log(7 / 0) // Infinity
+console.log('-9 ' + 5) // '-9 5'
+console.log('-9 ' - 5) // -14
+console.log(null + 1) // 1
+console.log(undefined + 1) // NaN
+console.log(' \t \n' - 2) // -2
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 3. Результат присваивания.</p>
+					<p class="task__text">Чему будут равны значения переменные a и b после выполнения следующего кода?</p>
+					<pre>
+						<code>
+let a = 2
+let b = 1 + (a *= 2)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log(a) // 4
+console.log(x) // 5
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 4. Исправьте сложение.</p>
+					<p class="task__text">Ниже приведен код, который запрашивает у пользователя два числа и показывает их сумму. Он работает неправильно. Код в примере выводит 12 (для значения полей по умолчанию). В чем ошибка? Исправьте ее. Результатом должно быть 3.</p>
+					<pre>
+						<code>
+let a = prompt('Первое число?', 1)
+let b = prompt('Второе число?', 2)
+console.log(a + b) // '12'
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+// Вариант № 1
+let a = prompt('Первое число?', 1)
+let b = prompt('Второе число?', 2)
+console.log(+a + +b)
+
+// Вариант № 2
+let a = +prompt('Первое число?', 1)
+let b = +prompt('Второе число?', 2)
+console.log(a + b)
+
+// Вариант № 3
+let a = Number(prompt('Первое число?', 1))
+let b = Number(prompt('Второе число?', 2))
+console.log(a + b)
+
+// Вариант № 4
+let a = prompt('Первое число?', 1)
+let b = prompt('Второе число?', 2)
+console.log(Number(a) + Number(b))
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 5.  Операторы сравнения.</p>
+					<p class="task__text">Не запуская код, определите какие значения выведутся в консоль.</p>
+					<pre>
+						<code>
+console.log(5 > 4)
+console.log('ананас' > 'яблоко')
+console.log('2' > '12')
+console.log(undefined == null)
+console.log(undefined === null)
+console.log(null == '\n0\n')
+console.log(null === +'\n0\n')
+console.log(123 > 'asdf')
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log(5 > 4) // true
+console.log("ананас" > "яблоко") // false
+console.log("2" > "12") // true
+console.log(undefined == null) // true
+console.log(undefined === null) // false
+console.log(null == "\n0\n") // false
+console.log(null === +"\n0\n") // false
+console.log(123 > 'asdf') // false
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 6. Что выведет alert?</p>
+					<p class="task__text">Что выведет код ниже?</p>
+					<pre>
+						<code>
+console.log(null || 2 || undefined)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+alert(alert(1) || 2 || alert(2))
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 7. Что выведется в консоль?</p>
+					<p class="task__text">Что выведет код ниже?</p>
+					<pre>
+						<code>
+alert(alert(1) || 2 || alert(2))
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<p class="task__text">Вызов alert не возвращает значения, или, иначе говоря, возвращает undefined.</p>
+						<p class="task__text">- первый оператор || выполнит alert(1);</p>
+						<p class="task__text">- получит значение undefined и пойдет дальше, ко второму операнду в поисках значения true;</p>
+						<p class="task__text">- так как второй операнд, является истинным, то вычисления завершатся.</p>
+						<p class="task__text">- второй оператор || не будет выполнен, выполнение до alert(3) не дойдет, поэтому 3 не будет выведено на экран.</p>
+						<pre>
+							<code>
+alert(alert(1) || 2 || alert(2)) // 1, а затем 2
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 8. Что выведется в консоль?</p>
+					<p class="task__text">Что выведет console?</p>
+					<pre>
+						<code>
+console.log(1 && null && 2)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log(1 && null && 2)
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 9. Что выведет alert?</p>
+					<p class="task__text">Что выведет console?</p>
+					<pre>
+						<code>
+alert(alert(1) && alert(2))
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+alert(alert(1) && alert(2)) // 1, затем undefined, т.к. alert не возвращает значения, или иначе говоря возвращает undefined. Поэтому до правого alert дело не дойдет, вычисляния закончатся на левом.
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 10. Что выведет console?</p>
+					<p class="task__text">Что выведет код ниже?</p>
+					<pre>
+						<code>
+console.log(null || 2 && 3 || 4)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log(null || 2 && 3 || 4) // 3, т.к. Приоритет оператора && (И) выше, чем у оператора || (ИЛИ), поэтому он выполнится первым. Результат 2 && 3 = 3, т.к. оператор && (И) не нашел значения false, поэтому принял последнее значение.
+// После выполняется следующая инструкция: null || 3 || 4 --> оператор ||(ИЛИ) находит первое значение true
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 11. Сокращенные операции.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались сокращенные операции.</p>
+					<pre>
+						<code>
+let num = 10
+num = num + 1
+num = num + 1
+num = num - 1
+console.log(num)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let num = 10
+num++
+num++
+num--
+console.log(num) // -> 11
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 12. Инкремент, декремент.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались операторы инкремент и декремент.</p>
+					<pre>
+						<code>
+let num = 47
+num = num + 7
+num = num - 14
+num = num * 1
+num = num / 10
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let num = 47
+num += 7
+num -= 14
+num *= 1
+num /= 10
+console.log(num) // --> 4
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 13. Сокращенные операции.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались сокращенные операции.</p>
+					<pre>
+						<code>
+// # 1
+let x = 2
+console.log(++x) // 3
+
+// # 2
+let y = 2
+console.log(y++) // 2
+
+// # 3
+let z = 2
+console.log(--z) // 1
+
+// # 4
+let p = 2
+console.log(p--) // 2
+
+// # 5
+let w = 2
+let a = ++w
+console.log(w) // 3
+console.log(a) // 3
+
+// # 6
+let q = 2
+let e = q++
+console.log(q) // 3
+console.log(e) // 2
+
+// # 7
+let t = 2
+let g = --t
+console.log(t) // 1
+console.log(g) // 1
+
+// # 8
+let o = 2
+let l = o--
+console.log(o) // 1
+console.log(l) // 2
+
+// # 9
+let m = 2
+m++
+let u = m--
+console.log(m++) // 2
+console.log(--u) // 2
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+// # 1
+let x = 2
+console.log(++x) // 3
+
+// # 2
+let y = 2
+console.log(y++) // 2
+
+// # 3
+let z = 2
+console.log(--z) // 1
+
+// # 4
+let p = 2
+console.log(p--) // 2
+
+// # 5
+let w = 2
+let a = ++w
+console.log(w) // 3
+console.log(a) // 3
+
+// # 6
+let q = 2
+let e = q++
+console.log(q) // 3
+console.log(e) // 2
+
+// # 7
+let t = 2
+let g = --t
+console.log(t) // 1
+console.log(g) // 1
+
+// # 8
+let o = 2
+let l = o--
+console.log(o) // 1
+console.log(l) // 2
+
+// # 9
+let m = 2
+m++
+let u = m--
+console.log(m++) // 2
+console.log(--u) // 2
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div> <!-- Finish container -->
+		</section>
+  </main>
+	<script src="./js/main.js"></script>
+	<script src="./js/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+</html>
