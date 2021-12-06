@@ -49,6 +49,7 @@ li {
   position: fixed;
   width: 100%;
   background-color: black;
+  z-index: 9999;
 }
 
 .nav__list {
@@ -168,13 +169,28 @@ li {
   color: #BC62AD;
   color: #3585bb;
 } */
+.tasks {
+  position: relative;
+}
+
+.tasks__wrapper {
+  position: absolute;
+  top: 74px;
+}
+
 .tasks__list {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #32363c;
+  color: #fff;
+  z-index: 999;
 }
 
 .tasks__item {
@@ -199,6 +215,7 @@ li {
 
 .task__name {
   padding-left: 10px;
+  margin-bottom: 10px;
   color: #8bc34a;
   font-weight: 700;
   border-left: 8px solid #8bc34a;
@@ -208,10 +225,10 @@ li {
   content: '';
   position: absolute;
   top: 20px;
-  left: 250px;
-  width: 900px;
-  height: 3px;
-  background-color: #8bc34a;
+  left: 50px;
+  width: 100%;
+  height: 2px;
+  background-color: #cfc1c1;
 }
 
 .task__name.hiden::after {
