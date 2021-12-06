@@ -193,10 +193,8 @@ li {
 }
 
 .task {
-  /*   &__solution {
-    text-indent: 1.5em;
-    text-align: justify;
-  } */
+  position: relative;
+  padding-top: 60px;
 }
 
 .task__name {
@@ -204,6 +202,20 @@ li {
   color: #8bc34a;
   font-weight: 700;
   border-left: 8px solid #8bc34a;
+}
+
+.task__name::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  width: 900px;
+  height: 3px;
+  background-color: #8bc34a;
+}
+
+.task__name.hiden::after {
+  display: none;
 }
 
 .task__condition {

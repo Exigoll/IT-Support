@@ -27,7 +27,7 @@ code.hljs {
 
 .hljs-class,.hljs-code,.hljs-property,.hljs-template-variable,.hljs-variable {
   color: #0aaeb3;
-  margin-left: -38px;
+/*   margin-left: -38px; */
 }
 .hljs-addition,.hljs-bullet,.hljs-regexp,.hljs-string {
   color: #1cb33d;
