@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <title>Arrays</title>
+	<link rel="stylesheet" href="./css/srcery.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <section class="navigation">
+      <nav class="nav">
+        <ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="./index.html">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./terms.html">Terms</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./task.html">JS Task</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./design.html">Design</a>
+					</li>
+        </ul>
+      </nav>
+    </section>
+		<section class="tasks">
+			<div class="tasks__wrapper">
+				<ul class="tasks__list">
+					<li class="tasks__item">
+						<a href="./variables.html" class="task__link">Variables</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./datatypes.html" class="task__link">Data types</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./conditions.html" class="task__link">Conditions</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./cycles.html" class="task__link">Cyclec</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./functions.html" class="task__link">Functions</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./operators.html" class="task__link">Operators</a>
+					</li>
+					<li class="tasks__item">
+						<a href="./arrays.html" class="task__link">Arrays</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="conditions">
+			<div class="container">
+				<div class="task">
+					<p class="task__name hiden">Задача № 1. Скопирован ли массив?</p>
+					<p class="task__text">Что выведет следующий код?</p>
+					<pre>
+						<code>
+let fruits = ['Яблоки', 'Груша', 'Апельсин']
+
+// добавляем новое значение в "копию"
+let shoppingCart = fruits
+shoppingCart.push('Банан')
+
+// что в fruits?
+console.log(fruits.length)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<p class="task__text">В консоль выведется значение 4, потому, что массив - это объект. Обе переменные являются ссылками на один и тот же массив.</p>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 2. Операции с массивами.</p>
+					<p class="task__text">Давайте произведём 5 операций с массивом.</p>
+					<p class="task__text">Создайте массив styles с элементами «Джаз» и «Блюз».</p>
+					<p class="task__text">Добавьте «Рок-н-ролл» в конец.</p>
+					<p class="task__text">Замените значение в середине на «Классика». Ваш код для поиска значения в середине должен работать для массивов с любой длиной.</p>
+					<p class="task__text">Удалите первый элемент массива и покажите его.</p>
+					<p class="task__text">Вставьте «Рэп» и «Регги» в начало массива.</p>
+					<p class="task__text">Массив по ходу выполнения операций:</p>
+					<pre>
+						<code>
+Джаз, Блюз
+Джаз, Блюз, Рок-н-ролл
+Джаз, Классика, Рок-н-ролл
+Классика, Рок-н-ролл
+Рэп, Регги, Классика, Рок-н-ролл
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let styles = ["Джаз", "Блюз"]
+styles.push("Рок-н-ролл")
+styles[Math.floor((styles.length - 1) / 2)] = "Классика"
+alert( styles.shift() )
+styles.unshift("Рэп", "Регги")
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 3. Вызов в контексте массива.</p>
+					<p class="task__text">Каков результат? Почему?</p>
+					<pre>
+						<code>
+let arr = ["a", "b"]
+
+arr.push(function() {
+	alert(this)
+})
+
+arr[2]()
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<p class="task__text">Вызов arr[2]() синтаксически – старый добрый obj[method](), в роли obj – arr, а в роли method – 2</p>
+						<p class="task__text">Итак, у нас есть вызов функции arr[2] как метода объекта. Соответственно, он получает в качестве this объект arr и выводит массив:</p>
+						<p class="task__text">У массива в итоге 3 элемента: сначала их было 2, плюс функция.</p>
+						<pre>
+							<code>
+let arr = ["a", "b"]
+
+arr.push(function() {
+	alert( this )
+})
+
+arr[2]() // "a","b",function
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 4. Сумма введённых чисел.</p>
+					<p class="task__text">Напишите функцию sumInput(), которая:</p>
+					<p class="task__text">Просит пользователя ввести значения, используя prompt и сохраняет их в массив.</p>
+					<p class="task__text">Заканчивает запрашивать значения, когда пользователь введёт не числовое значение, пустую строку или нажмёт «Отмена».</p>
+					<p class="task__text">Подсчитывает и возвращает сумму элементов массива.</p>
+					<p class="task__text">P.S. Ноль 0 – считается числом, не останавливайте ввод значений при вводе «0».</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+					<p class="task__text">Обратите внимание на малозаметную, но важную деталь решения. Мы не преобразуем value в число сразу после prompt, потому что после value = +value мы не сможем отличить пустую строку (конец записи) от «0» (разрешённое число). Мы сделаем это позже.</p>
+						<pre>
+							<code>
+function sumInput() {
+
+  let numbers = [];
+
+  while (true) {
+
+    let value = prompt("Введите число", 0);
+
+    // Прекращаем ввод?
+    if (value === "" || value === null || !isFinite(value)) break;
+
+    numbers.push(+value);
+  }
+
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+return sum;
+}
+
+alert( sumInput() );
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 5. Подмассив наибольшей суммы.</p>
+					<p class="task__text">На входе массив чисел, например: arr = [1, -2, 3, 4, -9, 6].</p>
+					<p class="task__text">Задача: найти непрерывный подмассив в arr, сумма элементов в котором максимальна.</p>
+					<p class="task__text">Функция getMaxSubSum(arr) должна возвращать эту сумму.</p>
+					<p class="task__text">Например:</p>
+					<pre>
+						<code>
+getMaxSubSum([-1, 2, 3, -9]) = 5 (сумма выделенных)
+getMaxSubSum([2, -1, 2, 3, -9]) = 6
+getMaxSubSum([-1, 2, 3, -9, 11]) = 11
+getMaxSubSum([-2, -1, 1, 2]) = 3
+getMaxSubSum([100, -9, 2, -3, 5]) = 100
+getMaxSubSum([1, 2, 3]) = 6 (берём все)
+						</code>
+					</pre>
+					<p class="task__text">Если все элементы отрицательные – ничего не берём(подмассив пустой) и сумма равна «0»:</p>
+					<pre>
+						<code>
+getMaxSubSum([-1, -2, -3]) = 0
+						</code>
+					</pre>
+					<p class="task__text">Попробуйте придумать быстрое решение: O(n<sup>2</sup>), а лучше за О(n) операций.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<p class="task__text"><b>Медленное решение:</b></p>
+						<p class="task__text">Можно посчитать все возможные подсуммы.</p>
+						<p class="task__text">Самый простой путь – посчитать суммы подмассивов, начиная с каждого элемента по очереди.</p>
+						<p class="task__text">Например, для [-1, 2, 3, -9, 11]:</p>
+						<pre>
+							<code>
+// Начиная с -1:
+-1
+-1 + 2
+-1 + 2 + 3
+-1 + 2 + 3 + (-9)
+-1 + 2 + 3 + (-9) + 11
+
+// Начиная с 2:
+2
+2 + 3
+2 + 3 + (-9)
+2 + 3 + (-9) + 11
+
+// Начиная с 3:
+3
+3 + (-9)
+3 + (-9) + 11
+
+// Начиная с -9
+-9
+-9 + 11
+
+// Начиная с 11
+11
+							</code>
+						</pre>
+						<p class="task__text">Реализуется с помощью вложенного цикла: внешний цикл проходит по элементам массива, а внутренний считает подсумму, начиная с текущего элемента.</p>
+						<pre>
+						<code>
+function getMaxSubSum(arr) {
+  let maxSum = 0 // если элементов не будет - возвращаем 0
+
+  for (let i = 0; i < arr.length; i++) {
+    let sumFixedStart = 0
+    for (let j = i; j < arr.length; j++) {
+      sumFixedStart += arr[j]
+      maxSum = Math.max(maxSum, sumFixedStart);
+    }
+  }
+
+  return maxSum
+}
+
+alert(getMaxSubSum([-1, 2, 3, -9])) // 5
+alert(getMaxSubSum([-1, 2, 3, -9, 11])) // 11
+alert(getMaxSubSum([-2, -1, 1, 2])) // 3
+alert(getMaxSubSum([1, 2, 3])) // 6
+alert(getMaxSubSum([100, -9, 2, -3, 5])) // 100
+						</code>
+						</pre>
+						<p class="task__text">Это решение имеет оценку сложности <a href="https://ru.wikipedia.org/wiki/%C2%ABO%C2%BB_%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B5_%D0%B8_%C2%ABo%C2%BB_%D0%BC%D0%B0%D0%BB%D0%BE%D0%B5" target="__blakn" style="color: rgb(13, 13, 189)">O(n2)</a>. Другими словами, если мы увеличим размер массива в 2 раза, время выполнения алгор	итма увеличится в 4 раза.</p>
+						<p class="task__text">Для больших массивов(1000, 10000 или больше элементов) такие алгоритмы могут приводить к серьёзным «тормозам».</p>
+						<p class="task__text"><b>Быстрое решение:</b></p>
+						<p class="task__text">Идём по массиву и накапливаем текущую частичную сумму элементов в переменной s. Если s в какой-то момент становится отрицательной – присваиваем s=0. Максимальный из всех s и будет ответом.</p>
+						<p class="task__text">Если объяснение недостаточно понятно, посмотрите на код, он вполне лаконичен:</p>
+						<pre>
+							<code>
+function getMaxSubSum(arr) {
+  let maxSum = 0
+  let partialSum = 0
+
+  for (let item of arr) { // для каждого элемента массива
+    partialSum += item // добавляем значение элемента к partialSum
+    maxSum = Math.max(maxSum, partialSum) // запоминаем максимум на данный момент
+    if (partialSum < 0) partialSum = 0 // ноль если отрицательное
+  }
+
+  return maxSum;
+}
+
+alert(getMaxSubSum([-1, 2, 3, -9])) // 5
+alert(getMaxSubSum([-1, 2, 3, -9, 11])) // 11
+alert(getMaxSubSum([-2, -1, 1, 2])) // 3
+alert(getMaxSubSum([100, -9, 2, -3, 5])) // 100
+alert(getMaxSubSum([1, 2, 3])) // 6
+alert(getMaxSubSum([-1, -2, -3])) // 0
+						</code>
+						</pre>
+						<p class="task__text">Этот алгоритм требует ровно 1 проход по массиву и его оценка сложности O(n).</p>
+						<p class="task__text">Больше информации об алгоритме тут: <a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem" target="__blakn" style="color: rgb(13, 13, 189)">Задача поиска максимальной суммы подмассива</a>. Если всё ещё не очевидно как это работает, просмотрите алгоритм в примерах выше, это будет лучше всяких слов.</p>
+					</div>
+				</div>
+<!-- 		<div class="task">
+					<p class="task__name">Задача № 6. Что выведет alert?</p>
+					<p class="task__text">Что выведет код ниже?</p>
+					<pre>
+						<code>
+console.log(null || 2 || undefined)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+alert(alert(1) || 2 || alert(2))
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 7. Что выведется в консоль?</p>
+					<p class="task__text">Что выведет код ниже?</p>
+					<pre>
+						<code>
+alert(alert(1) || 2 || alert(2))
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<p class="task__text">Вызов alert не возвращает значения, или, иначе говоря, возвращает undefined.</p>
+						<p class="task__text">- первый оператор || выполнит alert(1);</p>
+						<p class="task__text">- получит значение undefined и пойдет дальше, ко второму операнду в поисках значения true;</p>
+						<p class="task__text">- так как второй операнд, является истинным, то вычисления завершатся.</p>
+						<p class="task__text">- второй оператор || не будет выполнен, выполнение до alert(3) не дойдет, поэтому 3 не будет выведено на экран.</p>
+						<pre>
+							<code>
+alert(alert(1) || 2 || alert(2)) // 1, а затем 2
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 8. Что выведется в консоль?</p>
+					<p class="task__text">Что выведет console?</p>
+					<pre>
+						<code>
+console.log(1 && null && 2)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log(1 && null && 2)
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 9. Что выведет alert?</p>
+					<p class="task__text">Что выведет console?</p>
+					<pre>
+						<code>
+alert(alert(1) && alert(2))
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+alert(alert(1) && alert(2)) // 1, затем undefined, т.к. alert не возвращает значения, или иначе говоря возвращает undefined. Поэтому до правого alert дело не дойдет, вычисляния закончатся на левом.
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 10. Что выведет console?</p>
+					<p class="task__text">Что выведет код ниже?</p>
+					<pre>
+						<code>
+console.log(null || 2 && 3 || 4)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log(null || 2 && 3 || 4) // 3, т.к. Приоритет оператора && (И) выше, чем у оператора || (ИЛИ), поэтому он выполнится первым. Результат 2 && 3 = 3, т.к. оператор && (И) не нашел значения false, поэтому принял последнее значение.
+// После выполняется следующая инструкция: null || 3 || 4 -> оператор ||(ИЛИ) находит первое значение true
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 11. Сокращенные операции.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались сокращенные операции.</p>
+					<pre>
+						<code>
+let num = 10
+num = num + 1
+num = num + 1
+num = num - 1
+console.log(num)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let num = 10
+num++
+num++
+num--
+console.log(num) // -> 11
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 12. Инкремент, декремент.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались операторы инкремент и декремент.</p>
+					<pre>
+						<code>
+let num = 47
+num = num + 7
+num = num - 14
+num = num * 1
+num = num / 10
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let num = 47
+num += 7
+num -= 14
+num *= 1
+num /= 10
+console.log(num) // -> 4
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 13. Сокращенные операции.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались сокращенные операции.</p>
+					<pre>
+						<code>
+// # 1
+let x = 2
+console.log(++x) // 3
+
+// # 2
+let y = 2
+console.log(y++) // 2
+
+// # 3
+let z = 2
+console.log(--z) // 1
+
+// # 4
+let p = 2
+console.log(p--) // 2
+
+// # 5
+let w = 2
+let a = ++w
+console.log(w) // 3
+console.log(a) // 3
+
+// # 6
+let q = 2
+let e = q++
+console.log(q) // 3
+console.log(e) // 2
+
+// # 7
+let t = 2
+let g = --t
+console.log(t) // 1
+console.log(g) // 1
+
+// # 8
+let o = 2
+let l = o--
+console.log(o) // 1
+console.log(l) // 2
+
+// # 9
+let m = 2
+m++
+let u = m--
+console.log(m++) // 2
+console.log(--u) // 2
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+// # 1
+let x = 2
+console.log(++x) // 3
+
+// # 2
+let y = 2
+console.log(y++) // 2
+
+// # 3
+let z = 2
+console.log(--z) // 1
+
+// # 4
+let p = 2
+console.log(p--) // 2
+
+// # 5
+let w = 2
+let a = ++w
+console.log(w) // 3
+console.log(a) // 3
+
+// # 6
+let q = 2
+let e = q++
+console.log(q) // 3
+console.log(e) // 2
+
+// # 7
+let t = 2
+let g = --t
+console.log(t) // 1
+console.log(g) // 1
+
+// # 8
+let o = 2
+let l = o--
+console.log(o) // 1
+console.log(l) // 2
+
+// # 9
+let m = 2
+m++
+let u = m--
+console.log(m++) // 2
+console.log(--u) // 2
+							</code>
+						</pre>
+					</div>
+				</div> -->
+			</div> <!-- Finish container -->
+		</section>
+  </main>
+	<script src="./js/main.js"></script>
+	<script src="./js/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+</html>
