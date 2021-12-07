@@ -3,7 +3,7 @@ pre code.hljs {
   overflow-x: auto;
 }
 code.hljs {
-  padding: 3px 5px;
+  padding: 3px 15px;
 }
 .hljs {
   background: #1c1b19;
@@ -39,7 +39,7 @@ code.hljs {
   color: #2c78bf;
 }
 .hljs-comment,.hljs-link,.hljs-meta,.hljs-number {
-  color: #918175;
+  color: #ffba00;
 }
 .hljs-emphasis {
   font-style: italic;

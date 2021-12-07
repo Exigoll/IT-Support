@@ -36,7 +36,7 @@
       </nav>
     </section>
 		<section class="tasks">
-			<div class="container">
+			<div class="tasks__wrapper">
 				<ul class="tasks__list">
 					<li class="tasks__item">
 						<a href="./variables.html" class="task__link">Variables</a>
@@ -53,8 +53,283 @@
 					<li class="tasks__item">
 						<a href="./functions.html" class="task__link">Functions</a>
 					</li>
+					<li class="tasks__item">
+						<a href="./operators.html" class="task__link">Operators</a>
+					</li>
 				</ul>
 			</div>
+		</section>
+		<section class="conditions">
+			<div class="container">
+				<div class="task">
+					<p class="task__name hiden">Задача № 1. Шаблонные строки.</p>
+					<p class="task__text">Что выведет этот скрипт?</p>
+					<pre>
+						<code>
+let name = 'Andrew' 
+console.log(`hello ${1}`)
+console.log(`hello ${'name'}`)
+console.log(`hello ${name}`)
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let name = 'Andrew'
+console.log(`hello ${1}`) // 'hello 1'
+console.log(`hello ${'name'}`) // 'hello name'
+console.log(`hello ${name}`) // 'hello Andrew'
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 2.</p>
+					<p class="task__text">Даны переменные со значениями '5px' и '6px'. Найдите сумму пикселей из значений этих переменных и выведите ее на экран.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let one = '5px'
+let two = '6px'
+let result = parseFloat(one) + parseFloat(two)
+console.log(result)
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 3.</p>
+					<p class="task__text">Даны переменные со значениями '5.5px' и '6.25px'. Найдите сумму пикселей из значений этих переменных и выведите на экран.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let one = '5.5px'
+let two = '6.25px'
+let result = parseFloat(one) + parseFloat(two)
+console.log(result)
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 4.</p>
+					<p class="task__text">Модифицируйте предыдущую задачу так, чтобы к выводящемуся результату добавлялись буквы 'px'. То есть, если сумма равна 11.75, то на экран пусть выведется '11.75px'.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let one = '5.5px'
+let two = '6.25px'
+let result = parseFloat(one) + parseFloat(two)
+console.log(result + 'px')
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача №  5. Преобразование типов.</p>
+					<p class="task__text">Определите какие значения выведутся в консоль.</p>
+					<pre>
+						<code>
+console.log('5' + '2')
+console.log('5' + 2)
+console.log(5 + '2')
+console.log(5 + 2)
+console.log('5' * '2')
+console.log('5' - '2')
+console.log('5' / '2')
+console.log('5' % '2')
+console.log('5s' * '2')
+console.log('5s' + '2')
+console.log((-'5') + (-'2'))
+console.log('5' * 1 + '2' * 1)
+console.log('5' * '1' + '2' * '1')
+console.log('' + 3 + 1)
+console.log(5 - '1' * 2 - ('1' + '5s'))
+console.log(true + 3)
+console.log(true + true)
+console.log(true - true)
+console.log(true + false)
+console.log('1' + true)
+console.log(String(true) + 1)
+console.log(String(true) + Number(true))
+console.log(Boolean(3))
+console.log(Boolean(0))
+console.log(Boolean(-1))
+console.log(Boolean(-0))
+console.log(Boolean(+0))
+console.log(Boolean('abc'))
+console.log(Boolean(''))
+console.log(Boolean('0')
+console.log(Boolean(true))
+console.log(Boolean(false))
+console.log(Boolean('true'))
+console.log(Boolean('false'))
+console.log(Boolean(null))
+console.log(Boolean('null'))
+console.log(Boolean(undefined))
+console.log(Boolean('undefined'))
+console.log(Boolean(NaN))
+console.log(Boolean('NaN'))
+console.log(Boolean(3 * 'abc'))
+console.log(Boolean(Infinity)) 				
+console.log(Boolean(1 / 0))
+console.log(Number('2') + Number('3'))
+console.log(2 + Number('3'))
+console.log('2' + Number('3'))
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+console.log('5' + '2')// '52'
+console.log('5' + 2)// '52'
+console.log(5 + '2')// '52'
+console.log(5 + 2)// 7
+console.log('5' * '2')// 10
+console.log('5' - '2')// 3
+console.log('5' / '2')// 2.5
+console.log('5' % '2')// 1
+console.log('5s' * '2')// NaN
+console.log('5s' + '2')// '5s2'
+console.log((-'5') + (-'2'))// -7
+console.log('5' * 1 + '2' * 1)// 7
+console.log('5' * '1' + '2' * '1')// 7
+console.log('' + 3 + 1)// '31'
+console.log(5 - '1' * 2 - ('1' + '5s')) // NaN
+console.log(true + 3)// 4
+console.log(true + true)// 2 
+console.log(true - true)// 0
+console.log(true + false)// 1
+console.log('1' + true)// '1true'
+console.log(String(true) + 1)// 'true1'
+console.log(String(true) + Number(true))// 'true1'
+console.log(Boolean(3))// true
+console.log(Boolean(0))// false
+console.log(Boolean(-1))// true
+console.log(Boolean(-0))// false
+console.log(Boolean(+0))// false
+console.log(Boolean('abc'))// true
+console.log(Boolean(''))// false
+console.log(Boolean('0'))// true
+console.log(Boolean(true))// true
+console.log(Boolean(false))// false
+console.log(Boolean('true'))// true
+console.log(Boolean('false'))// true
+console.log(Boolean(null))// false
+console.log(Boolean('null'))// true
+console.log(Boolean(undefined))// false
+console.log(Boolean('undefined'))// true
+console.log(Boolean(NaN))// false
+console.log(Boolean('NaN'))// true
+console.log(Boolean(3 * 'abc'))// false
+console.log(Boolean(Infinity))// true
+console.log(Boolean(1 / 0))// true
+console.log(Number('2') + Number('3'))// 5
+console.log(2 + Number('3'))// 5
+console.log(('2' + Number('3'))// '23'
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 6. Принудительное преобразование типов.</p>
+					<p class="task__text">Переменная a имеет значение '2', а переменная b имеет значение '7'. Сложите значения переменных так, чтобы в результате получилось значение с типом Number.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let a = '10'
+let b = '20'
+console.log(Number(a) + Number(b))
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 7. Получение символов строки.</p>
+					<p class="task__text">Переменная x содержит значение 'abcde'. Обращаясь к отдельным символам этого значения:</p>
+					<p class="task__name">1. выведите в консоль символы 'a', 'b', 'c'</p>
+					<p class="task__name">2. запишите в новую переменную символы строки в обратном порядке.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let x = 'abcde'
+// № 1
+console.log("'" + x[0] + "'" + ", " + "'" + x[1]+ "'" + ", " + "'" + x[2] + "'")
+
+// № 2
+let y = x[4] + x[3] + x[2] + x[1] + x[0]
+console.log(y)
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 8. Получение последнего символа строки.</p>
+					<p class="task__text">Переменная x содержит значение 'qwerty'. Выведите, по отдельности, в консоль три последних символа.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let x = 'qwerty'
+console.log(x[x.length - 3])
+console.log(x[x.length - 2])
+console.log(x[x.length - 1])
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 9. Строки с цифрами.</p>
+					<p class="task__text">Переменная x содержит значение '77598'. Найдите сумму цифр этого значения.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let x = '77598'
+console.log(Number(x[0]) + Number(x[1]) + Number(x[2]) + Number(x[3]) + Number(x[4]))
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 10. Обращение к цифрам числа.</p>
+					<p class="task__text">Переменная x содержит значение 84241. Найдите сумму и произведение цифр этого значения, результаты запишите в переменные z и w.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let x = 84241
+x = String(x)
+let z = Number(x[0]) + Number(x[1]) + Number(x[2]) + Number(x[3]) + Number(x[4])
+let y = Number(x[0]) * Number(x[1]) * Number(x[2]) * Number(x[3]) * Number(x[4])
+console.log(z, y)
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 11. Цифры числа в обратном порядке.</p>
+					<p class="task__text">Переменная x содержит значение 11232. Переставьте цифры этого числа в обратном порядке.</p>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<pre>
+							<code>
+let x = 11232
+x = String(x)
+x = Number(x[4] + x[3] + x[2] + x[1] + x[0])
+console.log(x)
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div> <!-- Finish container -->
 		</section>
   </main>
 	<script src="./js/main.js"></script>
