@@ -267,7 +267,7 @@ code {
 }
 
 .collapsible {
-  width: 10%;
+  width: 20%;
   padding: 10px;
   background-color: white;
   font-family: "Times New Roman", Times, serif;
@@ -291,5 +291,24 @@ code {
   overflow: hidden;
   -webkit-transition: max-height .2s ease-out;
   transition: max-height .2s ease-out;
+}
+
+.cheats__info {
+  padding-bottom: 10px;
+  color: #232b1b;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.cheats__item {
+  list-style: inside;
+  margin-left: 40px;
+  padding-bottom: 5px;
+}
+
+.cheats__item > span {
+  color: #42a5f5;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
