@@ -105,7 +105,15 @@ li {
 }
 
 .design__value {
+  color: #fac92f;
+}
+
+.design__operator {
   color: #ffba00;
+}
+
+.design__argument {
+  color: #b39ddb;
 }
 
 .design__name-function {
