@@ -128,6 +128,10 @@ li {
   color: #d4770c;
 }
 
+.design__method {
+  color: #42a5f5;
+}
+
 .design__example {
   font-style: italic;
 }
