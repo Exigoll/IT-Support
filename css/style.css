@@ -293,6 +293,15 @@ code {
   transition: max-height .2s ease-out;
 }
 
+.cheats__name {
+  color: #7e75e6;
+  font-size: 30px;
+}
+
+.cheats__name:hover {
+  color: #7e75e6;
+}
+
 .cheats__info {
   padding-bottom: 10px;
   color: #232b1b;
