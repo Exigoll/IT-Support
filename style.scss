@@ -272,7 +272,14 @@ code {
 }
 //? Cheats
 .cheats {
-  &__container {
+  &__wrapper {
+  }
+  &__name {
+    color: #7e75e6;
+    font-size: 30px;
+  }
+  &__name:hover {
+    color: #7e75e6;
   }
   &__info {
     padding-bottom: 10px;
