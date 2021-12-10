@@ -301,626 +301,255 @@ alert(getMaxSubSum([-1, -2, -3])) // 0
 						<p class="task__text">Больше информации об алгоритме тут: <a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem" target="__blakn" style="color: rgb(13, 13, 189)">Задача поиска максимальной суммы подмассива</a>. Если всё ещё не очевидно как это работает, просмотрите алгоритм в примерах выше, это будет лучше всяких слов.</p>
 					</div>
 				</div>
-				<div class="task">
-
-					<p class="task__name">Задача № 6. Переведите текст вида border-left-width в borderLeftWidth.</p>
-					<p class="task__text">Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».</p>
-					<p class="task__text">То есть дефисы удаляются, а все слова после них получают заглавную букву.</p>
-					<p class="task__text">Примеры:</p>
+<!-- 		<div class="task">
+					<p class="task__name">Задача № 6. Что выведет alert?</p>
+					<p class="task__text">Что выведет код ниже?</p>
 					<pre>
 						<code>
-camelize("background-color") == 'backgroundColor'
-camelize("list-style-image") == 'listStyleImage'
-camelize("-webkit-transition") == 'WebkitTransition'
-						</code>
-					</pre>
-					<p class="task__text">P.S. Подсказка: используйте split, чтобы разбить строку на массив символов, потом переделайте всё как нужно и методом join соедините обратно.</p>
-					<button class="collapsible">Решение:</button>
-					<div class="content">
-						<pre>
-							<code>
-function camelize(str) {
-  return str
-    .split('-') // разбивает 'my-long-word' на массив ['my', 'long', 'word']
-    .map(
-      // Переводит в верхний регистр первые буквы всех элементом массива за исключением первого
-      // превращает ['my', 'long', 'word'] в ['my', 'Long', 'Word']
-      (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
-    )
-    .join(''); // соединяет ['my', 'Long', 'Word'] в 'myLongWord'
-}
-							</code>
-						</pre>
-					</div>
-				</div>
-				<div class="task">
-					<p class="task__name">Задача № 7. Фильтрация по диапазону.</p>
-					<p class="task__text">Напишите функцию filterRange(arr, a, b), которая принимает массив arr, ищет в нём элементы между a и b и отдаёт массив этих элементов.</p>
-					<p class="task__text">Функция должна возвращать новый массив и не изменять исходный.</p>
-					<p class="task__text">Например:</p>
-					<pre>
-						<code>
-let arr = [5, 3, 8, 1]
-
-let filtered = filterRange(arr, 1, 4)
-
-alert(filtered) // 3,1 (совпадающие значения)
-
-alert(arr) // 5,3,8,1 (без изменений)
+console.log(null || 2 || undefined)
 						</code>
 					</pre>
 					<button class="collapsible">Решение:</button>
 					<div class="content">
 						<pre>
 							<code>
-function filterRange(arr, a, b) {
-  // добавлены скобки вокруг выражения для улучшения читабельности
-  return arr.filter(item => (a <= item && item <= b))
-}
-
-let arr = [5, 3, 8, 1]
-
-let filtered = filterRange(arr, 1, 4)
-
-alert(filtered) // 3,1 (совпадающие значения)
-
-alert(arr) // 5,3,8,1 (без изменений)
+alert(alert(1) || 2 || alert(2))
 							</code>
 						</pre>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 8. Фильтрация по диапазону "на месте".</p>
-					<p class="task__text">Напишите функцию filterRangeInPlace(arr, a, b), которая принимает массив arr и удаляет из него все значения кроме тех, которые находятся между a и b. То есть, проверка имеет вид a ≤ arr[i] ≤ b.</p>
-					<p class="task__text">Функция должна изменять принимаемый массив и ничего не возвращать.</p>
-					<p class="task__text">Например:</p>
+					<p class="task__name">Задача № 7. Что выведется в консоль?</p>
+					<p class="task__text">Что выведет код ниже?</p>
 					<pre>
 						<code>
-let arr = [5, 3, 8, 1]
-
-filterRangeInPlace(arr, 1, 4) // удалены числа вне диапазона 1..4
-
-alert( arr ) // [3, 1]
+alert(alert(1) || 2 || alert(2))
+						</code>
+					</pre>
+					<button class="collapsible">Решение:</button>
+					<div class="content">
+						<p class="task__text">Вызов alert не возвращает значения, или, иначе говоря, возвращает undefined.</p>
+						<p class="task__text">- первый оператор || выполнит alert(1);</p>
+						<p class="task__text">- получит значение undefined и пойдет дальше, ко второму операнду в поисках значения true;</p>
+						<p class="task__text">- так как второй операнд, является истинным, то вычисления завершатся.</p>
+						<p class="task__text">- второй оператор || не будет выполнен, выполнение до alert(3) не дойдет, поэтому 3 не будет выведено на экран.</p>
+						<pre>
+							<code>
+alert(alert(1) || 2 || alert(2)) // 1, а затем 2
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Задача № 8. Что выведется в консоль?</p>
+					<p class="task__text">Что выведет console?</p>
+					<pre>
+						<code>
+console.log(1 && null && 2)
 						</code>
 					</pre>
 					<button class="collapsible">Решение:</button>
 					<div class="content">
 						<pre>
 							<code>
-function filterRangeInPlace(arr, a, b) {
-
-  for (let i = 0; i < arr.length; i++) {
-    let val = arr[i]
-
-    // удалить, если за пределами интервала
-    if (val < a || val > b) {
-      arr.splice(i, 1)
-      i--;
-    }
-  }
-}
-
-let arr = [5, 3, 8, 1]
-
-filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
-
-alert(arr) // [3, 1]
+console.log(1 && null && 2)
 							</code>
 						</pre>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 9. Сортировать в порядке по убыванию.</p>
+					<p class="task__name">Задача № 9. Что выведет alert?</p>
+					<p class="task__text">Что выведет console?</p>
 					<pre>
 						<code>
-let arr = [5, 2, 1, -10, 8]
-
-// ... ваш код для сортировки по убыванию
-
-alert(arr) // 8, 5, 2, 1, -10
+alert(alert(1) && alert(2))
 						</code>
 					</pre>
 					<button class="collapsible">Решение:</button>
 					<div class="content">
 						<pre>
 							<code>
-let arr = [5, 2, 1, -10, 8]
-
-arr.sort((a, b) => b - a)
-
-alert(arr)
+alert(alert(1) && alert(2)) // 1, затем undefined, т.к. alert не возвращает значения, или иначе говоря возвращает undefined. Поэтому до правого alert дело не дойдет, вычисляния закончатся на левом.
 							</code>
 						</pre>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 10. Скопировать и отсортировать массив.</p>
-					<p class="task__text">У нас есть массив строк arr. Нужно получить отсортированную копию, но оставить arr неизменённым.</p>
-					<p class="task__text">Создайте функцию copySorted(arr), которая будет возвращать такую копию.</p>
+					<p class="task__name">Задача № 10. Что выведет console?</p>
+					<p class="task__text">Что выведет код ниже?</p>
 					<pre>
 						<code>
-let arr = ["HTML", "JavaScript", "CSS"]
-
-let sorted = copySorted(arr)
-
-alert(sorted) // CSS, HTML, JavaScript
-alert(arr) // HTML, JavaScript, CSS (без изменений)
-						</code>
-					</pre>
-					<button class="collapsible">Решение:</button>
-					<div class="content">
-						<p class="task__text">Для копирования массива используем slice() и тут же – сортировку:</p>
-						<pre>
-							<code>
-function copySorted(arr) {
-  return arr.slice().sort()
-}
-
-let arr = ["HTML", "JavaScript", "CSS"]
-
-let sorted = copySorted(arr)
-
-alert(sorted)
-alert(arr)
-							</code>
-						</pre>
-					</div>
-				</div>
-				<div class="task">
-					<p class="task__name">Задача № 11. Создать расширяемый калькулятор.</p>
-					<p class="task__text">Создайте функцию конструктор Calculator, которая создаёт «расширяемые» объекты калькулятора.</p>
-					<p class="task__text">Задание состоит из двух частей.</p>
-					<p class="task__text">1.</p>
-					<p class="task__text">Во-первых, реализуйте метод calculate(str), который принимает строку типа "1 + 2" в формате «ЧИСЛО оператор ЧИСЛО» (разделено пробелами) и возвращает результат. Метод должен понимать плюс + и минус -.</p>
-					<p class="task__text">Пример использования:</p>
-					<pre>
-						<code>
-let calc = new Calculator
-
-alert(calc.calculate("3 + 7")) // 10
-						</code>
-					</pre>
-					<p class="task__text">2.</p>
-					<p class="task__text">Затем добавьте метод addMethod(name, func), который добавляет в калькулятор новые операции. Он принимает оператор name и функцию с двумя аргументами func(a,b), которая описывает его.</p>
-					<p class="task__text">Например, давайте добавим умножение *, деление / и возведение в степень **:</p>
-					<pre>
-						<code>
-let powerCalc = new Calculator
-powerCalc.addMethod("*", (a, b) => a * b)
-powerCalc.addMethod("/", (a, b) => a / b)
-powerCalc.addMethod("**", (a, b) => a ** b)
-
-let result = powerCalc.calculate("2 ** 3")
-alert(result) // 8
-						</code>
-					</pre>
-					<p class="task__text">- Для этой задачи не нужны скобки или сложные выражения.</p>
-					<p class="task__text">- Числа и оператор разделены ровно одним пробелом.</p>
-					<p class="task__text">- Не лишним будет добавить обработку ошибок.</p>
-					<button class="collapsible">Решение:</button>
-					<div class="content">
-						<p class="task__text">Обратите внимание, как хранятся методы. Они просто добавляются к внутреннему объекту.</p>
-						<p class="task__text">Все тесты и числовые преобразования выполняются в методе calculate. В будущем он может быть расширен для поддержки более сложных выражений.</p>
-						<pre>
-							<code>
-function Calculator() {
-
-  this.methods = {
-    "-": (a, b) => a - b,
-    "+": (a, b) => a + b
-  };
-
-  this.calculate = function(str) {
-
-    let split = str.split(' '),
-      a = +split[0],
-      op = split[1],
-      b = +split[2]
-
-    if (!this.methods[op] || isNaN(a) || isNaN(b)) {
-      return NaN;
-    }
-
-    return this.methods[op](a, b);
-  }
-
-  this.addMethod = function(name, func) {
-    this.methods[name] = func;
-  };
-}
-							</code>
-						</pre>
-					</div>
-				</div>
-				<div class="task">
-					<p class="task__name">Задача № 12. Трансформировать в массив имён.</p>
-					<p class="task__text">У вас есть массив объектов user, и в каждом из них есть user.name. Напишите код, который преобразует их в массив имён.</p>
-					<p class="task__text">Например:</p>
-					<pre>
-						<code>
-let vasya = { name: "Вася", age: 25 }
-let petya = { name: "Петя", age: 30 }
-let masha = { name: "Маша", age: 28 }
-
-let users = [ vasya, petya, masha ]
-
-let names = /* ... ваш код */
-
-alert(names) // Вася, Петя, Маша
+console.log(null || 2 && 3 || 4)
 						</code>
 					</pre>
 					<button class="collapsible">Решение:</button>
 					<div class="content">
 						<pre>
 							<code>
-let vasya = { name: "Вася", age: 25 }
-let petya = { name: "Петя", age: 30 }
-let masha = { name: "Маша", age: 28 }
-
-let users = [ vasya, petya, masha ]
-
-let names = users.map(item => item.name)
-
-alert(names) // Вася, Петя, Маша
+console.log(null || 2 && 3 || 4) // 3, т.к. Приоритет оператора && (И) выше, чем у оператора || (ИЛИ), поэтому он выполнится первым. Результат 2 && 3 = 3, т.к. оператор && (И) не нашел значения false, поэтому принял последнее значение.
+// После выполняется следующая инструкция: null || 3 || 4 -> оператор ||(ИЛИ) находит первое значение true
 							</code>
 						</pre>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 13. Трансформировать в объекты</p>
-					<p class="task__text">У вас есть массив объектов user, и у каждого из объектов есть name, surname и id.</p>
-					<p class="task__text">Напишите код, который создаст ещё один массив объектов с параметрами id и fullName, где fullName – состоит из name и surname.</p>
-					<p class="task__text">Например:</p>
+					<p class="task__name">Задача № 11. Сокращенные операции.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались сокращенные операции.</p>
 					<pre>
 						<code>
-let vasya = { name: "Вася", surname: "Пупкин", id: 1 }
-let petya = { name: "Петя", surname: "Иванов", id: 2 }
-let masha = { name: "Маша", surname: "Петрова", id: 3 }
-
-let users = [ vasya, petya, masha ]
-
-let usersMapped = /* ... ваш код ... */
-
-/*
-usersMapped = [
-  { fullName: "Вася Пупкин", id: 1 },
-  { fullName: "Петя Иванов", id: 2 },
-  { fullName: "Маша Петрова", id: 3 }
-]
-*/
-
-alert(usersMapped[0].id) // 1
-alert(usersMapped[0].fullName) // Вася Пупкин
-						</code>
-					</pre>
-					<p class="task__text">Итак, на самом деле вам нужно трансформировать один массив объектов в другой. Попробуйте использовать =>. Это небольшая уловка.</p>
-					<button class="collapsible">Решение:</button>
-					<div class="content">
-						<pre>
-							<code>
-let vasya = { name: "Вася", surname: "Пупкин", id: 1 }
-let petya = { name: "Петя", surname: "Иванов", id: 2 }
-let masha = { name: "Маша", surname: "Петрова", id: 3 }
-
-let users = [ vasya, petya, masha ]
-
-let usersMapped = users.map(user => ({
-  fullName: `${user.name} ${user.surname}`,
-  id: user.id
-}))
-
-/*
-usersMapped = [
-  { fullName: "Вася Пупкин", id: 1 },
-  { fullName: "Петя Иванов", id: 2 },
-  { fullName: "Маша Петрова", id: 3 }
-]
-*/
-
-alert( usersMapped[0].id ) // 1
-alert( usersMapped[0].fullName ) // Вася Пупкин
-							</code>
-						</pre>
-						<p class="task__text">Обратите внимание, что для стрелочных функций мы должны использовать дополнительные скобки.</p>
-						<p class="task__text">Мы не можем написать вот так:</p>
-						<pre>
-							<code>
-let usersMapped = users.map(user => {
-  fullName: `${user.name} ${user.surname}`,
-  id: user.id
-})
-							</code>
-						</pre>
-						<p class="task__text">Как мы помним, есть две функции со стрелками: без тела value => expr и с телом value => {...}.</p>
-						<p class="task__text">Здесь JavaScript будет трактовать { как начало тела функции, а не начало объекта. Чтобы обойти это, нужно заключить их в «нормальные» скобки:</p>
-						<pre>
-							<code>
-let usersMapped = users.map(user => ({
-  fullName: `${user.name} ${user.surname}`,
-  id: user.id
-}))
-							</code>
-						</pre>
-						<p class="task__text">Теперь всё хорошо.</p>
-					</div>
-				</div>
-				<div class="task">
-					<p class="task__name">Задача № 14. Отсортировать пользователей по возрасту.</p>
-					<p class="task__text">Напишите функцию sortByAge(users), которая принимает массив объектов со свойством age и сортирует их по нему.</p>
-					<p class="task__text">Например:</p>
-					<pre>
-						<code>
-let vasya = { name: "Вася", age: 25 }
-let petya = { name: "Петя", age: 30 }
-let masha = { name: "Маша", age: 28 }
-
-let arr = [ vasya, petya, masha ]
-
-sortByAge(arr)
-
-// теперь: [vasya, masha, petya]
-alert(arr[0].name) // Вася
-alert(arr[1].name) // Маша
-alert(arr[2].name) // Петя
+let num = 10
+num = num + 1
+num = num + 1
+num = num - 1
+console.log(num)
 						</code>
 					</pre>
 					<button class="collapsible">Решение:</button>
 					<div class="content">
 						<pre>
 							<code>
-function sortByAge(arr) {
-arr.sort((a, b) => a.age > b.age ? 1 : -1)
-}
-
-let vasya = { name: "Вася", age: 25 }
-let petya = { name: "Петя", age: 30 }
-let masha = { name: "Маша", age: 28 }
-
-let arr = [ vasya, petya, masha ]
-
-sortByAge(arr)
-
-// теперь отсортировано: [vasya, masha, petya]
-alert(arr[0].name) // Вася
-alert(arr[1].name) // Маша
-alert(arr[2].name) // Петя
+let num = 10
+num++
+num++
+num--
+console.log(num) // -> 11
 							</code>
 						</pre>
 					</div>
 				</div>
-
 				<div class="task">
-					<p class="task__name">Задача № 15. Перемешайте массив.</p>
-					<p class="task__text">Напишите функцию shuffle(array), которая перемешивает (переупорядочивает случайным образом) элементы массива.</p>
-					<p class="task__text">Многократные прогоны через shuffle могут привести к разным последовательностям элементов. Например:</p>
+					<p class="task__name">Задача № 12. Инкремент, декремент.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались операторы инкремент и декремент.</p>
 					<pre>
 						<code>
-let arr = [1, 2, 3]
-
-shuffle(arr)
-// arr = [3, 2, 1]
-
-shuffle(arr)
-// arr = [2, 1, 3]
-
-shuffle(arr)
-// arr = [3, 1, 2]
-// ...
-						</code>
-					</pre>
-					<p class="task__text">Все последовательности элементов должны иметь одинаковую вероятность. Например, [1,2,3] может быть переупорядочено как [1,2,3] или [1,3,2], или [3,1,2] и т.д., с равной вероятностью каждого случая.</p>
-					<button class="collapsible">Решение:</button>
-					<div class="content">
-						<p class="task__text">Простым решением может быть:</p>
-						<pre>
-							<code>
-function shuffle(array) {
-  array.sort(() => Math.random() - 0.5)
-}
-
-let arr = [1, 2, 3]
-shuffle(arr)
-alert(arr)
-							</code>
-						</pre>
-						<p class="task__text">Это, конечно, будет работать, потому что Math.random() - 0.5 отдаёт случайное число, которое может быть положительным или отрицательным, следовательно, функция сортировки меняет порядок элементов случайным образом.</p>
-						<p class="task__text">Но поскольку метод sort не предназначен для использования в таких случаях, не все возможные варианты имеют одинаковую вероятность.</p>
-						<p class="task__text">Например, рассмотрим код ниже. Он запускает shuffle 1000000 раз и считает вероятность появления для всех возможных вариантов arr:</p>
-						<pre>
-						<code>
-function shuffle(array) {
-  array.sort(() => Math.random() - 0.5);
-}
-
-// подсчёт вероятности для всех возможных вариантов
-let count = {
-  '123': 0,
-  '132': 0,
-  '213': 0,
-  '231': 0,
-  '321': 0,
-  '312': 0
-};
-
-for (let i = 0; i < 1000000; i++) {
-  let array = [1, 2, 3];
-  shuffle(array);
-  count[array.join('')]++;
-}
-
-// показать количество всех возможных вариантов
-for (let key in count) {
-  alert(`${key}: ${count[key]}`);
-}
-						</code>
-						</pre>
-						<p class="task__text">Результат примера (зависят от движка JS):</p>
-						<pre>
-							<code>
-123: 250706
-132: 124425
-213: 249618
-231: 124880
-312: 125148
-321: 125223
-							</code>
-						</pre>
-						<p class="task__text">Теперь мы отчётливо видим допущенное отклонение: 123 и 213 появляются намного чаще, чем остальные варианты.</p>
-						<p class="task__text">Результаты этого кода могут варьироваться при запуске на разных движках JavaScript, но очевидно, что такой подход не надёжен.</p>
-						<p class="task__text">Так почему это не работает? Если говорить простыми словами, то sort это «чёрный ящик»: мы бросаем в него массив и функцию сравнения, ожидая получить отсортированный массив. Но из-за абсолютной хаотичности сравнений чёрный ящик сходит с ума, и как именно он сходит с ума, зависит от конкретной его реализации, которая различна в разных движках JavaScript.</p>
-						<p class="task__text">Есть и другие хорошие способы решить эту задачу. Например, есть отличный алгоритм под названием Тасование Фишера — Йетса. Суть заключается в том, чтобы проходить по массиву в обратном порядке и менять местами каждый элемент со случайным элементом, который находится перед ним.</p>
-						<pre>
-							<code>
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1)); // случайный индекс от 0 до i
-
-    // поменять элементы местами
-    // мы используем для этого синтаксис "деструктурирующее присваивание"
-    // подробнее о нём - в следующих главах
-    // то же самое можно записать как:
-    // let t = array[i]; array[i] = array[j]; array[j] = t
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-							</code>
-						</pre>
-						<p class="task__text">Давайте проверим эту реализацию на том же примере:</p>
-						<pre>
-							<code>
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-// подсчёт вероятности для всех возможных вариантов
-let count = {
-  '123': 0,
-  '132': 0,
-  '213': 0,
-  '231': 0,
-  '321': 0,
-  '312': 0
-};
-
-for (let i = 0; i < 1000000; i++) {
-  let array = [1, 2, 3];
-  shuffle(array);
-  count[array.join('')]++;
-}
-
-// показать количество всех возможных вариантов
-for (let key in count) {
-  alert(`${key}: ${count[key]}`);
-}
-							</code>
-						</pre>
-						<p class="task__text">Пример вывода:</p>
-						<pre>
-							<code>
-123: 166693
-132: 166647
-213: 166628
-231: 167517
-312: 166199
-321: 166316
-							</code>
-						</pre>
-						<p class="task__text">Теперь всё в порядке: все варианты появляются с одинаковой вероятностью.</p>
-						<p class="task__text">Кроме того, если посмотреть с точки зрения производительности, то алгоритм «Тасование Фишера — Йетса» намного быстрее, так как в нём нет лишних затрат на сортировку.</p>
-					</div>
-				</div>
-				<div class="task">
-					<p class="task__name">Задача № 16. Получить средний возраст.</p>
-					<p class="task__text">Напишите функцию getAverageAge(users), которая принимает массив объектов со свойством age и возвращает средний возраст.</p>
-					<p class="task__text">Формула вычисления среднего арифметического значения: (age1 + age2 + ... + ageN) / N.</p>
-					<p class="task__text">Например:</p>
-					<pre>
-						<code>
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 29 };
-
-let arr = [ vasya, petya, masha ];
-
-alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+let num = 47
+num = num + 7
+num = num - 14
+num = num * 1
+num = num / 10
 						</code>
 					</pre>
 					<button class="collapsible">Решение:</button>
 					<div class="content">
 						<pre>
 							<code>
-function getAverageAge(users) {
-  return users.reduce((prev, user) => prev + user.age, 0) / users.length;
-}
-
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 29 };
-
-let arr = [ vasya, petya, masha ];
-
-alert( getAverageAge(arr) ); // 28
+let num = 47
+num += 7
+num -= 14
+num *= 1
+num /= 10
+console.log(num) // -> 4
 							</code>
 						</pre>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 17. Оставить уникальные элементы массива.</p>
-					<p class="task__text">Пусть arr – массив строк.</p>
-					<p class="task__text">Напишите функцию unique(arr), которая возвращает массив, содержащий только уникальные элементы arr.</p>
-					<p class="task__text">Например:</p>
+					<p class="task__name">Задача № 13. Сокращенные операции.</p>
+					<p class="task__text">Переделайте этот код так, чтобы в нем использовались сокращенные операции.</p>
 					<pre>
 						<code>
-function unique(arr) {
-  /* ваш код */
-}
+// # 1
+let x = 2
+console.log(++x) // 3
 
-let strings = ["кришна", "кришна", "харе", "харе",
-  "харе", "харе", "кришна", "кришна", ":-O"
-];
+// # 2
+let y = 2
+console.log(y++) // 2
 
-alert( unique(strings) ); // кришна, харе, :-O
+// # 3
+let z = 2
+console.log(--z) // 1
+
+// # 4
+let p = 2
+console.log(p--) // 2
+
+// # 5
+let w = 2
+let a = ++w
+console.log(w) // 3
+console.log(a) // 3
+
+// # 6
+let q = 2
+let e = q++
+console.log(q) // 3
+console.log(e) // 2
+
+// # 7
+let t = 2
+let g = --t
+console.log(t) // 1
+console.log(g) // 1
+
+// # 8
+let o = 2
+let l = o--
+console.log(o) // 1
+console.log(l) // 2
+
+// # 9
+let m = 2
+m++
+let u = m--
+console.log(m++) // 2
+console.log(--u) // 2
 						</code>
 					</pre>
 					<button class="collapsible">Решение:</button>
 					<div class="content">
-						<p class="task__text">Давайте пройдёмся по элементам массива:</p>
-						<p class="task__text">Для каждого элемента мы проверим, есть ли он в массиве с результатом.</p>
-						<p class="task__text">Если есть, то игнорируем его, а если нет – добавляем к результатам.</p>
 						<pre>
-								<code>
-	function unique(arr) {
-		let result = [];
+							<code>
+// # 1
+let x = 2
+console.log(++x) // 3
 
-		for (let str of arr) {
-			if (!result.includes(str)) {
-				result.push(str);
-			}
-		}
+// # 2
+let y = 2
+console.log(y++) // 2
 
-		return result;
-	}
+// # 3
+let z = 2
+console.log(--z) // 1
 
-	let strings = ["кришна", "кришна", "харе", "харе",
-		"харе", "харе", "кришна", "кришна", ":-O"
-	];
+// # 4
+let p = 2
+console.log(p--) // 2
 
-	alert( unique(strings) ); // кришна, харе, :-O
-								</code>
+// # 5
+let w = 2
+let a = ++w
+console.log(w) // 3
+console.log(a) // 3
+
+// # 6
+let q = 2
+let e = q++
+console.log(q) // 3
+console.log(e) // 2
+
+// # 7
+let t = 2
+let g = --t
+console.log(t) // 1
+console.log(g) // 1
+
+// # 8
+let o = 2
+let l = o--
+console.log(o) // 1
+console.log(l) // 2
+
+// # 9
+let m = 2
+m++
+let u = m--
+console.log(m++) // 2
+console.log(--u) // 2
+							</code>
 						</pre>
-						<p class="task__text">Код работает, но в нём есть потенциальная проблема с производительностью.</p>
-						<p class="task__text">Метод result.includes(str) внутри себя обходит массив result и сравнивает каждый элемент с str, чтобы найти совпадение.</p>
-						<p class="task__text">Таким образом, если result содержит 100 элементов и ни один не совпадает со str, тогда он обойдёт весь result и сделает ровно 100 сравнений. А если result большой, например, 10000, то будет произведено 10000 сравнений.</p>
-						<p class="task__text">Само по себе это не проблема, потому что движки JavaScript очень быстрые, поэтому обход 10000 элементов массива занимает считанные микросекунды.</p>
-						<p class="task__text">Но мы делаем такую проверку для каждого элемента arr в цикле for.</p>
-						<p class="task__text">Поэтому, если arr.length равен 10000, у нас будет что-то вроде 10000*10000 = 100 миллионов сравнений. Это многовато.</p>
-						<p class="task__text">Вот почему данное решение подходит только для небольших массивов.</p>
-						<p class="task__text">Далее в главе Map и Set мы увидим, как его оптимизировать.</p>
 					</div>
-				</div>
+				</div> -->
 			</div> <!-- Finish container -->
 		</section>
   </main>
