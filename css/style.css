@@ -82,10 +82,23 @@ li {
   color: #6a0dc2;
 }
 
+.def__title {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #101a06;
+  letter-spacing: 5px;
+}
+
 .def__item {
   margin-bottom: 10px;
   text-indent: 2em;
   text-align: justify;
+}
+
+.def__link {
+  color: #8bc34a;
+  text-decoration: none;
 }
 
 .style-notion {
