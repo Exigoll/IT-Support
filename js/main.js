@@ -11,11 +11,3 @@ for (let i = 0; i < coll.length; i++) {
     }
   })
 }
-let users = [
-  {id: 1, name: 'Andrew'},
-  {id: 2, name: 'John'},
-  {id: 3, name: 'Mike'},
-  ]
-
-let user = users.find(item => item.id == 1)
-console.log(user.name) // Andrew

@@ -38,8 +38,11 @@ code.hljs {
 .hljs-selector-tag,.hljs-template-tag {
   color: #2c78bf;
 }
-.hljs-comment,.hljs-link,.hljs-meta,.hljs-number {
+.hljs-link,.hljs-meta,.hljs-number {
   color: #ffba00;
+}
+.hljs-comment {
+  color: rgb(87, 86, 86);
 }
 .hljs-emphasis {
   font-style: italic;

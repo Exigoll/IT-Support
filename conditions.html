@@ -68,7 +68,7 @@
 		<section class="conditions">
 			<div class="container">
 				<div class="task">
-					<p class="task__name hiden">Задача № 1</p>
+					<p class="task__name hiden">Task № 1</p>
 					<p class="task__text">Выполнится ли следующая инструкция, и почему?</p>
 					<pre>
 						<code>
@@ -77,18 +77,18 @@ if ('0') {
 }
 						</code>
 					</pre>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 						<p class="task__text">Инструкция выполнится, т.к. условие выполняется и его результатом является значение true.</p>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 2. Сравнение значений.</p>
+					<p class="task__name">Task № 2. Сравнение значений.</p>
 					<p class="task__text">Выполните следующие сравнения:</p>
 					<p class="task__text">1. Если значение переменной test больше 10, то выведите в консоль 'true!', иначе 'false!'.</p>
 					<p class="task__text">2. Если значение переменной test равно 10, то выведите в консоль 'true!', иначе 'false!'.</p>
 					<p class="task__text">2. Если значение переменной test не равно 10, то выведите в консоль 'true!', иначе 'false!'.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -115,9 +115,9 @@ if (test != 10) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 3. Сравнение значений.</p>
+					<p class="task__name">Task № 3. Сравнение значений.</p>
 					<p class="task__text">Даны переменные x и y. Проверьте, значение какой из этих переменных больше и выведите соответствующее сообщение в консоль.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -132,9 +132,9 @@ if (x > y) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 4. Проверка значения из диапазона.</p>
+					<p class="task__name">Task № 4. Проверка значения из диапазона.</p>
 					<p class="task__text">Составьте конструкцию if ( ) c условием, что переменная userAge находится в диапазоне между значениями 14 и 90, включительно.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -144,9 +144,9 @@ if (userAge >= 14 && userAge <= 90)
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 5. Проверка значения вне диапазона.</p>
+					<p class="task__name">Task № 5. Проверка значения вне диапазона.</p>
 					<p class="task__text">Составьте конструкцию if ( ) c условием, что значение переменной userAge не находится в диапазоне 14 и 90 включительно. Напишите два варианта: первый с использованием оператора !, второй и третий – без него.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -162,7 +162,7 @@ if (userAge < 14 || userAge < 90)
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 6. Вопрос об if.</p>
+					<p class="task__name">Task № 6. Вопрос об if.</p>
 					<p class="task__text">Какие из перечисленных ниже alert( ) выполнятся? Какие конкретно значения будут результатами выражений в условиях if ( )?</p>
 					<pre>
 						<code>
@@ -182,14 +182,14 @@ if (null || -1 && 1) {
 }
 						</code>
 					</pre>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 						<p class="task__text">№ 1. true -> выполнится, т.к. оператор || возвращает значение true, если один из аргументов true;</p>
 						<p class="task__text">№ 2. false -> не выполнится, т.к. оператор && возвращает значение true, в случае если оба аргумента true. В данном случае возвращается последнее значение, то есть 0, а 0 -> false;</p>
 						<p class="task__text">№ 3. true -> выполнится, т.к.: сперва произойдет вычисление выражения -1 && 1 -> true; затем null || 1 -> true, т.к. оператор || возвращает значение true, если один из операндов true;</p>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 7. Проверка логина.</p>
+					<p class="task__name">Task № 7. Проверка логина.</p>
 					<p class="task__text">Напишите код, который будет спрашивать логин с помощью встроенной функции prompt( ).</p>
 					<p class="task__text">Если посетитель вводит "admin", то prompt( ) запрашивает пароль, если ничего не введено или нажата клавиша Esc - показать "Отменено", в противном случае отобразить "Я Вас не знаю!".</p>
 					<p class="task__text">Пароль проверять так:</p>
@@ -198,7 +198,7 @@ if (null || -1 && 1) {
 					<p class="task__text">3. при отмене - "Отменено".</p>
 					<p class="task__text">Для решения используйте вложенные блоки if ( ). Обращайте внимание на стиль и читаемость кода.</p>
 					<p class="task__text">Подсказка: передача пустого ввода в приглашение prompt( ) возвращает пустую строку '  '. Нажатие клавиши Esc во время запроса возвращает null.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -221,10 +221,10 @@ if (userName === 'админ') {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 8. Название JavaScript.</p>
+					<p class="task__name">Task № 8. Название JavaScript.</p>
 					<p class="task__text">Используя конструкцию if ( ) else, напишите код, который будет спрашивать у пользователя: Какой город является столицей Японии?</p>
 					<p class="task__text">Если пользователь вводит "Токио", то показать: "Верно!", в противном случае - "Не верно!".</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -238,13 +238,13 @@ if (cityName == 'Токио') {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 9. Покажите знак числа.</p>
+					<p class="task__name">Task № 9. Покажите знак числа.</p>
 					<p class="task__text">Используя конструкцию else if ( ), напишите код, который получает число через встроенную функцию prompt( ), а затем выводит в alert( ):</p>
 					<p class="task__text">1, если значение > 0;</p>
 					<p class="task__text">-1, если значение < 0;</p>
 					<p class="task__text">0, если значение == 0.</p>
 					<p class="task__text">Предполагается, что пользователь вводит только числа.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -260,7 +260,7 @@ if (number > 0) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 10. Перепишете if в ?</p>
+					<p class="task__name">Task № 10. Перепишете if в ?</p>
 					<p class="task__text">Перепишите конструкцию if ( ) с использованием условного оператора ?.</p>
 					<pre>
 						<code>
@@ -273,7 +273,7 @@ if (a + b < 4) {
 }
 						</code>
 					</pre>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -283,7 +283,7 @@ let result = (a + b < 4)
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 11. Перепишите if ( ) else в ?.</p>
+					<p class="task__name">Task № 11. Перепишите if ( ) else в ?.</p>
 					<p class="task__text">Перепишите конструкцию else if ( ) с использованием нескольких операторов ?. Для читаемости рекомендуется разбить код на несколько строк.</p>
 					<pre>
 						<code>
@@ -302,7 +302,7 @@ if (login == 'Сотрудник') {
 alert(message)
 						</code>
 					</pre>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -317,9 +317,9 @@ alert(message)
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 12. Тернарный оператор ?.</p>
+					<p class="task__name">Task № 12. Тернарный оператор ?.</p>
 					<p class="task__text">Значение в переменной num, может быть либо отрицательным, либо положительным. Запишите в переменную result значение 1, если переменная num больше или равна 0, и значение -1, если переменная num меньше 0.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -330,9 +330,9 @@ alert(result)
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 13.</p>
+					<p class="task__name">Task № 13.</p>
 					<p class="task__text">Переменная day содержит какое-то значение из интервала от 1 до 31. Определите в какую декаду месяца попадает это значение (в первую, вторую или третью).</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -350,9 +350,9 @@ if (day <= 10) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 14.</p>
+					<p class="task__name">Task № 14.</p>
 					<p class="task__text">Переменная num содержит какое-то значение с типом Number. Если это значение меньше 10 или больше 99, то выведите в консоль сообщение об этом. Если же значение попадает в указанный диапазон, то найдите сумму цифр этого значения. Если полученное значение меньше или равно 9, то выведите в консоль сообщение "Значение содержит одну цифру", в противном случае 'Значение содержит две цифры'.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -372,7 +372,7 @@ if (num < 10 || num > 99) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 15. Область видимости.</p>
+					<p class="task__name">Task № 15. Область видимости.</p>
 					<p class="task__text">Исправьте ошибку в нижеуказанном коде, так чтобы осуществлялась проверка возраста на достижение 18 лет.</p>
 					<pre>
 						<code>
@@ -386,7 +386,7 @@ if (age >= 18) {
 console.log(adult)
 						</code>
 					</pre>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -403,9 +403,9 @@ console.log(adult)
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 16. Длина массивов.</p>
+					<p class="task__name">Task № 16. Длина массивов.</p>
 					<p class="task__text">В переменной arr содержится некоторый массив с числами. Напишите условие, которое проверит, что в массиве 3 элемента. Если это так, то выведите в консоль сумму элементов массива.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -419,9 +419,9 @@ if (arr.length === 3) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 17. Длина строк.</p>
+					<p class="task__name">Task № 17. Длина строк.</p>
 					<p class="task__text">В переменной str содержится значение '12345'. Напишите условие, которое проверит, что значение переменной str больше или равно 3. Выведите соответствующее сообщение в консоль.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -435,9 +435,9 @@ if (str.length >= 3) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 18. Проверка символа строки.</p>
+					<p class="task__name">Task № 18. Проверка символа строки.</p>
 					<p class="task__text">Переменная str содержит значение '30654'. Проверьте, равен ли третий символ данного значения числу 1; равен ли последний символ числу 9.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -459,9 +459,9 @@ if ((str.length -1) == 9) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 19. Проверка символа строки.</p>
+					<p class="task__name">Task № 19. Проверка символа строки.</p>
 					<p class="task__text">Переменная num  содержит значение 1000. Напишите условие, которое проверит, равна ли последняя цифра этого числа нулю.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -475,9 +475,9 @@ if (String(num)[3] == 0) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 20. Проверка символа числа.</p>
+					<p class="task__name">Task № 20. Проверка символа числа.</p>
 					<p class="task__text">В переменной num  хранится значение 306. Определите, четное это значение или нет. Значение будет четным, если последний символ равен 0, 2, 4, 6 или 8, и нечетным в противном случае.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -491,9 +491,9 @@ if (num % 2 == 0) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 21. Остаток от числа.</p>
+					<p class="task__name">Task № 21. Остаток от числа.</p>
 					<p class="task__text">Переменная num содержит значение 145623. Проверьте, что оно делится на 3 без остатка, выведите соответствующую фразу в консоль.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -505,9 +505,9 @@ if (num % 3 === 0) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 22.</p>
+					<p class="task__name">Task № 22.</p>
 					<p class="task__text">В переменной month содержится какое-то значение из интервала от 1 до 12. Определите к какому времени года относится этот месяц.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -527,9 +527,9 @@ if (month == 12 || month <= 2) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 23.</p>
+					<p class="task__name">Task № 23.</p>
 					<p class="task__text">Переменная str содержит значение 'qwerty'. Проверьте, что первым символом этого значения является буква 'q'. Выведите в консоль соответствующую фразу.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -543,9 +543,9 @@ if (str[0] == 'q') {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 24.</p>
+					<p class="task__name">Task № 24.</p>
 					<p class="task__text">Переменная num содержит значение 1992. Проверьте, что первым символом числа является цифра 1, 2 или 3.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -559,9 +559,9 @@ if (String(num)[0] == 1 || String(num)[0] ==2 || String(num)[0] == 3) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 25.</p>
+					<p class="task__name">Task № 25.</p>
 					<p class="task__text">Переменная num содержит трехзначное число. Найдите сумму цифр этого числа.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -572,9 +572,9 @@ console.log(Number(result[0]) + Number(result[1]) + Number(result[2]))
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 26.</p>
+					<p class="task__name">Task № 26.</p>
 					<p class="task__text">Переменная num содержит шестизначное число. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Выведите соответствующую запись в консоль.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -589,9 +589,9 @@ if (Number(num[0]) + Number(num[1]) + Number(num[2]) == Number(num[3]) +Number(n
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 27. Switch ( ) case.</p>
+					<p class="task__name">Task № 27. Switch ( ) case.</p>
 					<p class="task__text">Переменная num может принимать значения 1, 2, 3 или 4. Если она имеет значение 1, то выведите в консоль - 'зима', если 2, то - 'лето' и т.д. Если в переменной будет какое-то другое значение - выведите в консоль сообщение об ошибке. Решите задачу через switch ( ) case.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -617,9 +617,9 @@ switch (num) {
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 28. Тернарный оператор ?</p>
+					<p class="task__name">Task № 28. Тернарный оператор ?</p>
 					<p class="task__text">Переменная num может быть отрицательной, либо положительной. Запишите в переменную result число 1, если переменная num больше или равна нулю, и число - 1, если переменная num меньше нуля. Решите задачу при помощи тернарного оператора.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
@@ -630,9 +630,9 @@ console.log(result)
 					</pre>
 				</div>
 				<div class="task">
-					<p class="task__name">Задача № 29.</p>
+					<p class="task__name">Task № 29.</p>
 					<p class="task__text">Если переменная num равна нулю или равна 2, то прибавьте к ней 10, иначе поделите ее на 10. Выведите новое значение переменной в консоль. Проверьте работу скрипта, при num равном 5, 0, -5, 2.</p>
-					<button class="collapsible">Решение:</button>
+					<button class="collapsible">Solution:</button>
 					<div class="content">
 					<pre>
 						<code>
