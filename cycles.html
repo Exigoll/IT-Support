@@ -68,7 +68,147 @@
 		<section class="conditions">
 			<div class="container">
 				<div class="task">
-					<p class="task__name hiden">Task № 1</p>
+					<p class="task__name hiden">Task № 1 </p>
+					<p class="task__text">Выведите в консоль числа от 1 до 33.</p>
+					<button class="collapsible">Solution:</button>
+					<div class="content">
+						<pre>
+							<code>
+let i = 1
+while (i <= 33) {
+  console.log(i)
+  i++
+}
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Task № 2</p>
+					<p class="task__text">Выведите в консоль четные числа в промежутке от 20 до 100.</p>
+					<button class="collapsible">Solution:</button>
+					<div class="content">
+						<pre>
+							<code>
+let i = 20
+while (i < 80) {
+	console.log(i)
+	i += 2
+}
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Task № 3</p>
+					<p class="task__text">Не запуская код, определите выполнятся ли следующие циклы?</p>
+					<pre>
+						<code>
+// # 1
+let i = true 
+while (test === true) {
+  console.log(typeof i)
+}
+
+// # 2
+let i = 0
+while (i < 10) {
+  console.log(i)
+  i++
+}
+
+// # 3
+let i = 10
+while (i <= 99) {
+  console.log(i)
+  i--
+}
+
+// # 4
+let i = 0
+while (i == 0) {
+  console.log(i)
+  i++
+}
+
+// # 5
+let i = 1
+while (i <= 10) {
+  console.log(i)
+  i++
+}
+
+// # 6
+let i = 1
+while (i <= 10) {
+  console.log(i)
+  i-- 
+}
+
+// # 7
+let i = 1
+while (i >= 10) {
+  console.log(i)
+  i++
+}
+
+// # 8
+let i = 1
+while (i == 10) {
+  console.log(i)
+  i++
+}
+						</code>
+					</pre>
+					<button class="collapsible">Solution:</button>
+					<div class="content">
+						<pre>
+							<code>
+// # 1
+// Код, размещенный в теле цикла будет выполняться "вечно" (пока скрипт не будет остановлен принудительно).
+
+// # 2
+// Цикл выполнится и выведет в консоль цифры от 0 до 9.
+
+// # 3
+// Код, размещенный в теле цикла будет выполняться "вечно" (пока скрипт не будет остановлен принудительно).
+
+// # 4
+// Код в теле цикла совершит 1 итерацию, отобразит в консоли 0, затем остановится.
+
+// # 5
+// Код в теле цикла выполнится 10 раз и выведет в консоль цифры от 1 до 10.
+
+// # 6 
+// Код, размещенный в теле цикла будет выполняться "вечно" (пока скрипт не будет остановлен принудительно).
+
+// # 7 
+// Код, в теле цикла не выполнится, т.к. условие задано не верно.
+
+// # 8
+// Код, в теле цикла не выполнится, т.к. условие задано не верно.
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Task № 3</p>
+					<p class="task__text">Выведите в консоль четные числа в промежутке от 50 до 0.</p>
+					<button class="collapsible">Solution:</button>
+					<div class="content">
+						<pre>
+							<code>
+let i = 50
+while (i >= 0) {
+	console.log(i)
+	i--
+}
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="task">
+					<p class="task__name">Task № 1</p>
 					<p class="task__text">Какие значения выведет этот цикл?</p>
 					<pre>
 						<code>
@@ -359,7 +499,7 @@ switch (number) {
 // break внизу не обязательны, но ставится по "правилам хорошего тона".
 // Допустим, он не стоит. Есть шанс, что в будущем нам понадобится добавить в конец еще один case, например case 4, 
 // и мы, вполне вероятно, забудем этот break поставить. В результате case 2 / case 3 продолжится на case 4 и будет ошибка.
-							</code>
+ 							</code>
 						</pre>
 					</div>
 				</div>
