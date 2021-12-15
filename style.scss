@@ -212,14 +212,14 @@ li {
 .task {
   position: relative;
   padding-top: 60px;
-  &__name {
+  &__title {
     padding-left: 10px;
     margin-bottom: 10px;
     color: #8bc34a;
     font-weight: 700;
     border-left: 8px solid #8bc34a;
   }
-  &__name::after {
+  &__title::after {
     content: '';
     position: absolute;
     top: 20px;
@@ -228,19 +228,16 @@ li {
     height: 2px;
     background-color: rgb(207, 193, 193);
   }
-  &__name.hiden::after  {
+  &__title.hiden::after  {
     display: none;
   }
   &__condition {
-    text-indent: 1.5em;
-    text-align: justify;
   }
-  &__text {
+  &__description > p {
     text-indent: 1.5em;
     text-align: justify;
   }
 }
-
 
 
 //? Other

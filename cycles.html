@@ -68,42 +68,57 @@
 		<section class="conditions">
 			<div class="container">
 				<div class="task">
-					<p class="task__name hiden">Task № 1 </p>
-					<p class="task__text">Выведите в консоль числа от 1 до 33.</p>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
-							<code>
+					<h3 class="task__title hiden">Task № 1</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Выведите в консоль числа от 1 до 33.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
 let i = 1
 while (i <= 33) {
-  console.log(i)
+console.log(i)
   i++
 }
-							</code>
-						</pre>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 2</p>
-					<p class="task__text">Выведите в консоль четные числа в промежутке от 20 до 100.</p>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
-							<code>
+					<h3 class="task__title">Task № 2</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Выведите в консоль четные числа в диапазоне от 20 до 100.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
 let i = 20
 while (i < 80) {
-	console.log(i)
-	i += 2
+  console.log(i)
+  i += 2
 }
-							</code>
-						</pre>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 3</p>
-					<p class="task__text">Не запуская код, определите выполнятся ли следующие циклы?</p>
-					<pre>
-						<code>
+					<h3 class="task__title">Task № 3</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Не запуская код, определите выполнятся ли следующие циклы?</p>
+						</div>
+						<pre>
+							<code>
 // # 1
 let i = true 
 while (test === true) {
@@ -158,12 +173,14 @@ while (i == 10) {
   console.log(i)
   i++
 }
-						</code>
-					</pre>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
-							<code>
+							</code>
+						</pre>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
 // # 1
 // Код, размещенный в теле цикла будет выполняться "вечно" (пока скрипт не будет остановлен принудительно).
 
@@ -187,49 +204,265 @@ while (i == 10) {
 
 // # 8
 // Код, в теле цикла не выполнится, т.к. условие задано не верно.
-							</code>
-						</pre>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 3</p>
-					<p class="task__text">Выведите в консоль четные числа в промежутке от 50 до 0.</p>
+					<h3 class="task__title">Task № 4</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>В коде допущена ошибка, которая привела к тому, что цикл выполняется вечно. Исправьте ошибку, и выведите в консоль цифры от 10 до 1.</p>
+						</div>
+						<pre>
+							<code>
+let i = 10
+while (i >= 1) {
+  console.log(i)
+}
+							</code>
+						</pre>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
+let i = 10
+while (i >= 1) {
+  console.log(i)
+  i--
+}
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 5</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>В коде допущена ошибка, которая привела к тому, что цикл выполняется вечно. Исправьте ошибку, и выведите в консоль цифры от 10 до 1.</p>
+						</div>
+						<pre>
+							<code>
+let i = 10
+while (i >= 1) {
+  console.log(i)
+  i--
+}
+							</code>
+						</pre>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
+let i = 10
+while (i >= 1) {
+  console.log(i)
+  i--
+}
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 6</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>При помощи цикла for выведите в консоль четные числа от 0 до 100.</p>
+						</div>
+					</div>
+					<div class="task__solution">
 					<button class="collapsible">Solution:</button>
 					<div class="content">
 						<pre>
 							<code>
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log(i)
+  }
+}
+							</code>
+						</pre>
+					</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 7</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>При помощи цикла for выведите в консоль числа от 1 до 99.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
+for (let i = 1; i <= 99; i++) {
+  if (!(i % 2 === 0)) {
+    console.log(i)
+  }
+}
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 8</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>При помощи цикла for выведите в консоль числа от 100 до 0.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+							<code>
+for (let i = 100; i >= 0; i--) {
+  console.log(i)
+}
+							</code>
+							</pre>
+					</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 9</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Найдите произведение целых чисел от 1 до 20.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
+let result = 1
+let i 
+for (i = 1; i <= 20; i++) {
+  result = result * i
+}
+console.log(result) // 2432902008176640000
+							</code>
+							</pre>
+					</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 10</h3>
+						<div class="task__condition">
+						<div class="task__description">
+							<p>Найдите сумму четных чисел от 2 до 100.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
+let result = 0
+let i
+for (i = 0; i <= 100; i++) {
+	if (i % 2 == 0) {
+		result = result + i
+	}
+}
+console.log(result) // 2050
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 11</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Найдите сумму не четных чисел от 1 до 99.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
+let result = 0
+let i
+for (i = 1; i <= 99; i++) {
+	if (1(i % 2 == 0)) {
+		result = result + i
+	}
+}
+console.log(result) // 2500
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<div class="task">
+					<h3 class="task__title">Task № 12</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Выведите в консоль четные числа в промежутке от 50 до 0.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
 let i = 50
 while (i >= 0) {
 	console.log(i)
 	i--
 }
-							</code>
-						</pre>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 1</p>
-					<p class="task__text">Какие значения выведет этот цикл?</p>
-					<pre>
-						<code>
+					<h3 class="task__title">Task № 13</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Какие значения выведет этот цикл?</p>
+						</div>
+						<pre>
+							<code>
 let i = 3
 
 while (i) {
   console.log(i--)
 }
-						</code>
-					</pre>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<p class="task__text">3, 2, 1.</p>
-						<p class="task__text">Выполнение цикла остановится когда значение переменной i будет равно 0, то есть когда будет возвращено значение false.</p>
+							</code>
+						</pre>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<div class="task__description">
+								<p>В консоль выведутся значения 3, 2, 1.</p>
+								<p>Выполнение цикла остановится когда значение переменной i будет равно 0, то есть когда будет возвращено значение false.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 2</p>
-					<p class="task__text">Укажите какие значения будут выведены в консоль, в случаях использования инкремента в префикской и постфиксной формах. Будет ли результат отличаться?</p>
-					<pre>
-						<code>
+					<h3 class="task__title">Task № 14</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Укажите какие значения будут выведены в консоль, в случаях использования инкремента в префикской и постфиксной формах. Будет ли результат отличаться?</p>
+						</div>
+						<pre>
+							<code>
 // Префиксная форма
 let i = 0
 while (++i < 5) {
@@ -240,11 +473,13 @@ let i = 0
 while (i++ < 5) {
   console.log(i)
 }
-						</code>
-					</pre>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
+							</code>
+						</pre>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
 							<code>
 // Префиксная форма инкремента:
 let i = 0
@@ -269,14 +504,18 @@ while (++i < 5) {
 // Окончание цикла: при i = 4 произойдет сравнение while (4 < 5) - верно, после этого сработает i++, увеличив i до 5, так что значение 5 будет выведено.
 // Значение i = 5 последнее, потому что на следующем шаге while (5 < 5) -> false.
 							</code>							
-						</pre>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 3</p>
-					<p class="task__text">Укажите какие значения будут выведены в консоль, в случаях использования инкремента в префикской и постфиксной формах. Будет ли результат отличаться?</p>
-					<pre>
-						<code>
+					<h3 class="task__title">Task № 15</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Укажите какие значения будут выведены в консоль, в случаях использования инкремента в префикской и постфиксной формах. Будет ли результат отличаться?</p>
+						</div>
+						<pre>
+							<code>
 // Постфиксный вариант i++
 for (let i = 0; i < 5; i++) {
   console.log(i)
@@ -285,106 +524,141 @@ for (let i = 0; i < 5; i++) {
 for (let i = 0; i < 5; ++i) {
   console.log(i)
 } 
-						</code>
-					</pre>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<p class="task__text"><b>Ответ: от 0 до 4 в обоих случаях.</b></p>
-						<pre>
-							<code>
-	// Постфиксный вариант i++
-	for (let i = 0; i < 5; i++) {
-		console.log(i)
-	}
-	// Префиксный вариант ++i
-	for (let i = 0; i < 5; ++i) {
-		console.log(i)
-	} 
-
-	// Такой результат обусловлен работой алгоритма for:
-	// 1. Выполнить присваивание i = 0, перед чем-либо;
-	// 2. Проверить условие i < 5;
-	// 3. Если true - выполнить код в теле цикла, а затем i++;
-	// 4. Увеличиние i++ выполняется отдельно от проверки условия (2), значение i при этом не используется. 
-	// Поэтому нет никакой разницы между префиксной и постфиксной формой оператор инкремент.
 							</code>
 						</pre>
 					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<div class="task__description">
+								<p><b>Ответ: от 0 до 4 в обоих случаях.</b></p>
+							</div>
+							<pre>
+								<code>
+// Постфиксный вариант i++
+for (let i = 0; i < 5; i++) {
+  console.log(i)
+}
+// Префиксный вариант ++i
+for (let i = 0; i < 5; ++i) {
+  console.log(i)
+} 
+
+// Такой результат обусловлен работой алгоритма for:
+// 1. Выполнить присваивание i = 0, перед чем-либо;
+// 2. Проверить условие i < 5;
+// 3. Если true - выполнить код в теле цикла, а затем i++;
+// 4. Увеличиние i++ выполняется отдельно от проверки условия (2), значение i при этом не используется. 
+// Поэтому нет никакой разницы между префиксной и постфиксной формой оператор инкремент.
+							</code>
+							</pre>
+						</div>
+					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 4</p>
-					<p class="task__text">При помощи цикла for выведите в консоль, четные числа, от 2 до 10.</p>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
-							<code>
+					<h3 class="task__title">Task № 16</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>При помощи цикла for выведите в консоль, четные числа, от 2 до 10.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
 for (let i = 2; i <= 10; i++) {
   if (i % 2 == 0) {
     console.log(i)
   }
 }
 // Для проверки на четность используется оператор % (получение остатка от деления)
-							</code>
-						</pre>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 5</p>
-					<p class="task__text">Перепишите следующий код, заменив цикл for на while, без изменения поведения цикла.</p>
-					<pre>
-						<code>
+					<h3 class="task__title">Task № 17</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Перепишите следующий код, заменив цикл for на while, без изменения поведения цикла.</p>
+						</div>
+						<pre>
+							<code>
 for (let i = 0; i < 3; i++) {
   console.log(`number ${i}!`)
 }
-						</code>
+							</code>
 					</pre>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
-							<code>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
 let i = 0
 while (i < 3) {
   console.log(`number ${i}!`)
   i++
 }
-							</code>
-						</pre>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 6</p>
-					<p class="task__text">Напишите цикл, который предлагает ввести число, больше 100. Если посетитель ввел другое число - попросить ввести еще раз, и так далее.</p>
-					<p class="task__text">Цикл должен спрашивать число пока либо посетитель не введет число, больше 100, либо не нажмет кнопку Esc.</p>
-					<p class="task__text">Предполагается, что посетитель вводит только числа. Предусматривать обработку не числовых строк в этой задаче не обязательно.</p>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
-							<code>
-let num
+					<h3 class="task__title">Task № 18</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>
+								Напишите цикл, который предлагает ввести число, больше 100. Если посетитель ввел другое число - попросить ввести еще раз, и так далее.
+							</p>
+							<p>
+								Цикл должен спрашивать число пока либо посетитель не введет число, больше 100, либо не нажмет кнопку Esc.
+							</p>
+							<p>
+								Предполагается, что посетитель вводит только числа. Предусматривать обработку не числовых строк в этой задаче не обязательно.
+							</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
+	let num
+	
+	do {
+	  num = prompt('Введите число больше 100?', 0)
+	} while (num <= 100 && num)
+	  
+	// Цикл do while повторяется, пока верны две проверки:
+	// 1. Проверка num <= 100 – то есть, введённое число всё ещё меньше 100.
+	// 2. Проверка && num вычисляется в false, когда num имеет значение null или пустая строка ''.   В этом случае цикл while тоже нужно прекратить.
+	// Кстати, сравнение num <= 100 при вводе null даст true, так что вторая проверка необходима.
+								</code>
+							</pre>
+					</div>
 
-do {
-  num = prompt('Введите число больше 100?', 0)
-} while (num <= 100 && num)
-  
-// Цикл do while повторяется, пока верны две проверки:
-// 1. Проверка num <= 100 – то есть, введённое число всё ещё меньше 100.
-// 2. Проверка && num вычисляется в false, когда num имеет значение null или пустая строка ''.   В этом случае цикл while тоже нужно прекратить.
-// Кстати, сравнение num <= 100 при вводе null даст true, так что вторая проверка необходима.
-							</code>
-						</pre>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 7</p>
-					<p class="task__text">Натуральное число, больше 1, называется простым, если оно ни на что не делится, кроме себя и 1.</p>
-					<p class="task__text">Другими словами, n > 1 - простое, если при его делении на любое число кроме 1 и n есть остаток. Например 5 это простое число, оно не может быть разделено без остатка на 2, 3 и 4.</p>
-					<p class="task__text">Напишите код, который выводит все простые числа из интервала от 2 до n.</p>
-					<p class="task__text">Для n = 10 результат должен быть 2, 3, 5, 7.</p>
-					<p class="task__text">P.S. Код ниже должен легко модифицироваться для любых других интервалов.</p>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<pre>
-							<code>
+					<h3 class="task__title">Task № 19</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Натуральное число, больше 1, называется простым, если оно ни на что не делится, кроме себя и 1.</p>
+							<p>Другими словами, n > 1 - простое, если при его делении на любое число кроме 1 и n есть остаток. Например 5 это простое число, оно не может быть разделено без остатка на 2, 3 и 4.</p>
+							<p>Напишите код, который выводит все простые числа из интервала от 2 до n.</p>
+							<p>Для n = 10 результат должен быть 2, 3, 5, 7.</p>
+							<p>P.S. Код ниже должен легко модифицироваться для любых других интервалов.</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<pre>
+								<code>
 // Существует множество алгоритмов решения этой задачи. В данном случае воспользуемся вложенными циклами.
 // Для всех i от 1 до 10 {
 //   проверить, делится ли число  i на какое-либо из чисел до него
@@ -397,25 +671,28 @@ let n = 10
 
 nextPrime:
 for (let i = 2; i <= n; i++) { // Для всех i от 1 до 10
-
-  for (let j = 2; j < i; j++) { // проверить, делится ли число i на какое-либо из чисел до него. Если делится, то это i не подходит, берем следующее, если не делится, то i - простое число
+  for (let j = 2; j < i; j++) { // проверить, делится ли число i на какое-либо из чисел до него. Если делится, то это i не подходит, берем следующее, 
+				//если не делится, то i - простое число
     if (i % j == 0) continue nextPrime // не подходит, берём следующее
   }
-
   console.log(i) // простое число
 }
 
 // Конечно же, его можно оптимизировать с точки зрения производительности. Например, проверять все j не 2 до i, а от 2 до квадратного корня из i. 
 //А для больших чисел - существуют более эффективные специализированные алгоритмы проверки простоты числа, к примеру: квадратное решето и решето числового поля.
-							</code>
-						</pre>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 8</p>
-					<p class="task__text">Перепишите код с использованием конструкции if else.</p>
-					<pre>
-						<code>
+					<h3 class="task__title">Task № 20</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Перепишите код с использованием конструкции if else.</p>
+						</div>
+						<pre>
+							<code>
 switch (browser) {
 case 'Edge':
 	console.log( "You've got the Edge!" );
@@ -431,11 +708,15 @@ case 'Opera':
 default:
 	console.log( 'We hope that this page looks ok!' )
 }
-						</code>
+							</code>
 					</pre>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<p class="task__text">Если совсем точно следовать работе switch, то if должен выполнять === (строгое сравнение). Впрочем, для таких строк, подойдет и == (сравнение).</p>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+						<div class="task__description">
+							<p>Если совсем точно следовать работе switch, то if должен выполнять === (строгое сравнение). Впрочем, для таких строк, подойдет и == (сравнение).</p>
+						</div>
 						<pre>
 							<code>
 let = prompt('Каким браузером Вы пользуетесь?')
@@ -453,13 +734,18 @@ if (let == 'Edge') {
 } 
 							</code>
 						</pre>
+						</div>
 					</div>
 				</div>
 				<div class="task">
-					<p class="task__name">Task № 9</p>
-					<p class="task__text">Перепишите код с использованием одной конструкции switch.</p>
-					<pre>
-						<code>
+					<h3 class="task__title">Task № 21</h3>
+					<div class="condition">
+						<div class="task__condition">
+							<div class="task__description">
+								<p>Перепишите код с использованием одной конструкции switch.</p>
+							</div>
+							<pre>
+								<code>
 const number = +prompt('Введите число между 0 и 3', '')
 
 if (number === 0) {
@@ -471,13 +757,18 @@ if (number === 1) {
 if (number === 2 || number === 3) {
   console.log('Вы ввели число 2, а может и 3')
 }
-						</code>
-					</pre>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-						<p class="task__text">Первые две проверки - обычный case, третья разделена на два case:</p>
-						<pre>
-							<code>
+								</code>
+							</pre>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<div class="task__condition">
+								<p>Первые две проверки - обычный case, третья разделена на два case:</p>
+							</div>
+							<pre>
+								<code>
 let number = +prompt('Введите число от 0 до 3')
 switch (number) {
   case 0 :
@@ -491,7 +782,7 @@ switch (number) {
   case 2 :
   case 3 :
     console.log('Вы ввели число 2, а может 3')
-   default :
+    default :
     console.log('Введено не правильное значение')
     break
 } 
@@ -499,8 +790,9 @@ switch (number) {
 // break внизу не обязательны, но ставится по "правилам хорошего тона".
 // Допустим, он не стоит. Есть шанс, что в будущем нам понадобится добавить в конец еще один case, например case 4, 
 // и мы, вполне вероятно, забудем этот break поставить. В результате case 2 / case 3 продолжится на case 4 и будет ошибка.
- 							</code>
-						</pre>
+	 							</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 			</div> <!-- Finish container -->
