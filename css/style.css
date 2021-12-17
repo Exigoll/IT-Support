@@ -238,7 +238,7 @@ li {
   padding-top: 60px;
 }
 
-.task__name {
+.task__title {
   padding-left: 10px;
   margin-bottom: 10px;
   color: #8bc34a;
@@ -246,7 +246,7 @@ li {
   border-left: 8px solid #8bc34a;
 }
 
-.task__name::after {
+.task__title::after {
   content: '';
   position: absolute;
   top: 20px;
@@ -256,16 +256,11 @@ li {
   background-color: #cfc1c1;
 }
 
-.task__name.hiden::after {
+.task__title.hiden::after {
   display: none;
 }
 
-.task__condition {
-  text-indent: 1.5em;
-  text-align: justify;
-}
-
-.task__text {
+.task__description > p {
   text-indent: 1.5em;
   text-align: justify;
 }
