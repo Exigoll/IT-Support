@@ -86,7 +86,7 @@ console.log(i)
   i++
 }
 // Вариант № 2
-for (let i = 1; i <= 3; i++) {
+for (let i = 1; i <= 33; i++) {
   console.log(i)
 }
 								</code>
@@ -383,8 +383,7 @@ console.log(result) // 2432902008176640000
 							<pre>
 								<code>
 let result = 0
-let i
-for (i = 0; i <= 100; i++) {
+for (let i = 0; i <= 100; i++) {
   if (i % 2 == 0) {
     result = result + i
   }
@@ -660,8 +659,6 @@ while (i < 3) {
 					<h3 class="task__title">Task № 19</h3>
 					<div class="task__condition">
 						<div class="task__description">
-							<p>Натуральное число, больше 1, называется простым, если оно ни на что не делится, кроме себя и 1.</p>
-							<p>Другими словами, n > 1 - простое, если при его делении на любое число кроме 1 и n есть остаток. Например 5 это простое число, оно не может быть разделено без остатка на 2, 3 и 4.</p>
 							<p>Напишите код, который выводит все простые числа из интервала от 2 до n.</p>
 							<p>Для n = 10 результат должен быть 2, 3, 5, 7.</p>
 							<p>P.S. Код ниже должен легко модифицироваться для любых других интервалов.</p>
@@ -708,18 +705,16 @@ for (let i = 2; i <= n; i++) { // Для всех i от 1 до 10
 							<code>
 switch (browser) {
 case 'Edge':
-	console.log( "You've got the Edge!" );
-	break;
-
+	console.log('You ve got the Edge!')
+	break
 case 'Chrome':
 case 'Firefox':
 case 'Safari':
 case 'Opera':
-	console.log( 'Okay we support these browsers too' )
-	break;
-
+	console.log('Okay we support these browsers too')
+	break
 default:
-	console.log( 'We hope that this page looks ok!' )
+	console.log('We hope that this page looks ok!')
 }
 							</code>
 					</pre>
@@ -787,15 +782,13 @@ switch (number) {
   case 0 :
     console.log('Вы ввели число 0')
     break
-
   case 1 :
     console.log('Вы ввели число 1')
     break
-
   case 2 :
   case 3 :
     console.log('Вы ввели число 2, а может 3')
-    default :
+  default :
     console.log('Введено не правильное значение')
     break
 } 
