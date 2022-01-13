@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <title>Functions</title>
-	<link rel="stylesheet" href="./css/srcery.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="../css/srcery.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <main>
@@ -21,7 +21,7 @@
       <nav class="nav">
         <ul class="nav__list">
 					<li class="nav__item">
-						<a class="nav__link" href="./index.html">Home</a>
+						<a class="nav__link" href="../index.html">Home</a>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link" href="./terms.html">Terms</a>
@@ -68,10 +68,34 @@
 		<section class="conditions">
 			<div class="container">
 				<div class="task">
-					<p class="task__name hiden">Task № 1. Обязателен ли else?</p>
-					<p class="task__text">Следующая функция возвращает значение true, если параметр age > 18. В ином случае она запрашивает подтверждение через confirm( ) и возвращает результат:</p>
-					<pre>
-						<code>
+					<h3 class="task__title hiden">Task № 1</h3>
+					<div class="task__condition">
+						<div class="task__description">
+							<p>Следующая функция возвращает значение true, если параметр age > 18. В ином случае она запрашивает подтверждение через confirm( ) и возвращает результат:</p>
+						</div>
+						<pre>
+							<code>
+function checkAge(age) {
+if (age > 18) {
+  return true
+  } else {
+    return confirm('lol?')
+  }
+}
+							</code>
+						</pre>
+						<div class="task__description">
+							<p>Будет ли эта функция работать как-то иначе, если убрать else?</p>
+						</div>
+					</div>
+					<div class="task__solution">
+						<button class="collapsible">Solution:</button>
+						<div class="content">
+							<div class="task__description">
+								<p>Оба варианта функций работают одинаково, отличий нет.</p>
+							</div>
+							<pre>
+								<code>
 function checkAge(age) {
   if (age > 18) {
     return true
@@ -79,14 +103,13 @@ function checkAge(age) {
     return confirm('lol?')
   }
 }
-						</code>
-					</pre>
-					<p class="task__text">Будет ли эта функция работать как-то иначе, если убрать else?</p>
-					<button class="collapsible">Solution:</button>
-					<div class="content">
-					<p class="task__text">Оба варианта функций работают одинаково, отличий нет, потому что ...</p>
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
+
+
 				<div class="task">
 					<p class="task__name">Task № 2.Перепишите функцию, используя оператор ? или ||.</p>
 					<p class="task__text">Следующая функция возвращает значение true, если параметр age > 18. В ином случае она задает вопрос confirm( ) и возвращает его результат.</p>
@@ -238,8 +261,8 @@ ask(
 			</div> <!-- Finish container -->
 		</section>
   </main>
-	<script src="./js/main.js"></script>
-	<script src="./js/highlight.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
 </body>
 </html>
