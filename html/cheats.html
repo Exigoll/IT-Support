@@ -41,40 +41,70 @@
 		<section class="cheats">
 			<div class="container">
 				<div class="cheats__wrapper">
-					<button class="collapsible cheats__name">Методы массивов</button>
+					<div class="cheats__arraymethods">
+						<button class="collapsible cheats__name">Методы массивов</button>
+						<div class="content">
+							<p class="cheats__info">Для добавления / удаления элементов:</p>
+							<ul class="cheats__list">
+								<li class="cheats__item"><span>push</span>(...items) - добавляет элемент в конец</li>
+								<li class="cheats__item"><span>pop</span>() – извлекает элемент с конца</li>
+								<li class="cheats__item"><span>shift</span>() – извлекает элемент с начала</li>
+								<li class="cheats__item"><span>unshift</span>(...items) – добавляет элементы в начало</li>
+								<li class="cheats__item"><span>splice</span>(pos, deleteCount, ...items) – начиная с индекса pos, удаляет deleteCount элементов и вставляет items</li>
+								<li class="cheats__item"><span>slice</span>(start, end) – создаёт новый массив, копируя в него элементы с позиции start до end (не включая end)</li>
+								<li class="cheats__item"><span>concat</span>(...items) – возвращает новый массив: копирует все члены текущего массива и добавляет к нему items. Если какой-то из items является массивом, тогда берутся его элементы</li>
+							</ul>
+							<p class="cheats__info">Для поиска среди элементов:</p>
+							<ul class="cheats__list">
+								<li class="cheats__item"><span>indexOf</span> / <span>lastIndexOf</span>(item, pos) – ищет item, начиная с позиции pos, и возвращает его индекс или -1, если ничего не найдено</li>
+								<li class="cheats__item"><span>includes</span>(value) – возвращает true, если в массиве имеется элемент value, в противном случае false</li>
+								<li class="cheats__item"><span>find</span> / <span>filter</span>(func) – фильтрует элементы через функцию и отдаёт первое/все значения, при прохождении которых через функцию возвращается true</li>
+								<li class="cheats__item"><span>findIndex</span> похож на <span>find</span>, но возвращает индекс вместо значения</li>
+							</ul>
+							<p class="cheats__info">Для перебора элементов:</p>
+							<ul class="cheats__list">
+								<li class="cheats__item"><span>forEach</span>(func) – вызывает func для каждого элемента. Ничего не возвращает</li>
+							</ul>
+							<p class="cheats__info">Для преобразования массива:</p>
+							<ul class="cheats__list">
+								<li class="cheats__item"><span>map</span>(func) – создаёт новый массив из результатов вызова func для каждого элемента</li>
+								<li class="cheats__item"><span>sort</span>(func) – сортирует массив «на месте», а потом возвращает его</li>
+								<li class="cheats__item"><span>reverse</span>() – «на месте» меняет порядок следования элементов на противоположный и возвращает изменённый массив</li>
+								<li class="cheats__item"><span>split</span> / <span>join</span> – преобразует строку в массив и обратно</li>
+								<li class="cheats__item"><span>reduce</span>(func, initial) – вычисляет одно значение на основе всего массива, вызывая func для каждого элемента и передавая промежуточный результат между вызовами.</li>
+							</ul>
+							<p class="cheats__info">Дополнительно:</p>
+							<ul class="cheats__list">
+								<li class="cheats__item"><span>Array.isArray</span>(arr) проверяет, является ли arr массивом.</li>
+							</ul>
+						</div>
+					</div>
+					<button class="collapsible cheats__name">Объект Math</button>
 					<div class="content">
-						<p class="cheats__info">Для добавления / удаления элементов:</p>
+						<p class="cheats__info">Свойства</p>
 						<ul class="cheats__list">
-							<li class="cheats__item"><span>push</span>(...items) - добавляет элемент в конец</li>
-							<li class="cheats__item"><span>pop</span>() – извлекает элемент с конца</li>
-							<li class="cheats__item"><span>shift</span>() – извлекает элемент с начала</li>
-							<li class="cheats__item"><span>unshift</span>(...items) – добавляет элементы в начало</li>
-							<li class="cheats__item"><span>splice</span>(pos, deleteCount, ...items) – начиная с индекса pos, удаляет deleteCount элементов и вставляет items</li>
-							<li class="cheats__item"><span>slice</span>(start, end) – создаёт новый массив, копируя в него элементы с позиции start до end (не включая end)</li>
-							<li class="cheats__item"><span>concat</span>(...items) – возвращает новый массив: копирует все члены текущего массива и добавляет к нему items. Если какой-то из items является массивом, тогда берутся его элементы</li>
+							<li class="cheats__item"><span>Math.E</span> - представляет основание натурального логарифма, e, приблизительно равное 2,718</li>
+							<li class="cheats__item"><span>Math.LN2</span> - представляет натуральный логарифм из 2, приблизительно равный 0,693</li>
+							<li class="cheats__item"><span>Math.LN10</span> - представляет натуральный логарифм из 10, приблизительно равный 2,302</li>
+							<li class="cheats__item"><span>Math.LOG2F</span> - представляет двоичный логарифм из e, приблизительно равный 1,442</li>
+							<li class="cheats__item"><span>Math.LOG10E</span> - представляет двоичный логарифм из e, приблизительно равный 0,434</li>
+							<li class="cheats__item"><span>Math.PI</span> - представляет отношение длины окружности круга к его диаметру, приблизительно равное 3,14159</li>
+							<li class="cheats__item"><span>Math.SQRT1_2</span> - представляет квадратный корень из 1/2, приблизительно равный 0,707</li>
+							<li class="cheats__item"><span>Math.SQRT2</span> - представляет квадратный корень из 2, приблизительно равный 1,414</li>
 						</ul>
-						<p class="cheats__info">Для поиска среди элементов:</p>
-						<ul>
-							<li class="cheats__item"><span>indexOf</span> / <span>lastIndexOf</span>(item, pos) – ищет item, начиная с позиции pos, и возвращает его индекс или -1, если ничего не найдено</li>
-							<li class="cheats__item"><span>includes</span>(value) – возвращает true, если в массиве имеется элемент value, в противном случае false</li>
-							<li class="cheats__item"><span>find</span> / <span>filter</span>(func) – фильтрует элементы через функцию и отдаёт первое/все значения, при прохождении которых через функцию возвращается true</li>
-							<li class="cheats__item"><span>findIndex</span> похож на <span>find</span>, но возвращает индекс вместо значения</li>
-						</ul>
-						<p class="cheats__info">Для перебора элементов:</p>
-						<ul>
-							<li class="cheats__item"><span>forEach</span>(func) – вызывает func для каждого элемента. Ничего не возвращает</li>
-						</ul>
-						<p class="cheats__info">Для преобразования массива:</p>
-						<ul>
-							<li class="cheats__item"><span>map</span>(func) – создаёт новый массив из результатов вызова func для каждого элемента</li>
-							<li class="cheats__item"><span>sort</span>(func) – сортирует массив «на месте», а потом возвращает его</li>
-							<li class="cheats__item"><span>reverse</span>() – «на месте» меняет порядок следования элементов на противоположный и возвращает изменённый массив</li>
-							<li class="cheats__item"><span>split</span> / <span>join</span> – преобразует строку в массив и обратно</li>
-							<li class="cheats__item"><span>reduce</span>(func, initial) – вычисляет одно значение на основе всего массива, вызывая func для каждого элемента и передавая промежуточный результат между вызовами.</li>
-						</ul>
-						<p class="cheats__info">Дополнительно:</p>
-						<ul>
-							<li class="cheats__item"><span>Array.isArray</span>(arr) проверяет, является ли arr массивом.</li>
+						<p class="cheats__info">Методы</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>Math.abs</span> - возвращает абсолютное значение числа</li>
+							<li class="cheats__item"><span>Math.sbrt</span> - возвращает кубический корень числа</li>
+							<li class="cheats__item"><span>Math.ceil</span> - округляет аргумент до ближайшего большего целого числа</li>
+							<li class="cheats__item"><span>Math.floor</span> - округляет аргумент до ближайшего меньшего целого числа</li>
+							<li class="cheats__item"><span>Math.max</span> - возвращает наибольшее число из группы чисел, переданных в функцию.</li>
+							<li class="cheats__item"><span>Math.min</span> - возвращает наименьшее число из группы чисел, переданных в функцию.</li>
+							<li class="cheats__item"><span>Math.pow</span> - возводит число в заданную степень</li>
+							<li class="cheats__item"><span>Math.random</span> - возвращает случайное дробное число от 0 до 1</li>
+							<li class="cheats__item"><span>Math.round</span> - выполняет округление до ближайшего целого числа по правилам математического округления (то есть до большего числа)</li>
+							<li class="cheats__item"><span>Math.sqrt</span> - возвращает квадратный корень числа</li>
+							<li class="cheats__item"><span>Math.trunc</span> - возвращает целую часть числа путем удаления всех дробных знаков</li>
 						</ul>
 					</div>
 				</div>

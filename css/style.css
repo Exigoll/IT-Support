@@ -235,7 +235,11 @@ li {
 
 .task {
   position: relative;
-  padding-top: 60px;
+  margin-top: 60px;
+  padding: 10px;
+  background-color: #c2d2d8;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .task__title {
@@ -277,10 +281,10 @@ code {
 .collapsible {
   width: 20%;
   padding: 10px;
-  background-color: white;
+  background-color: inherit;
   font-family: "Times New Roman", Times, serif;
   font-size: 24px;
-  color: #8bc34a;
+  color: #ffffff;
   font-weight: 700;
   border: none;
   text-align: left;
