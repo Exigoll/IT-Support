@@ -41,44 +41,44 @@
 		<section class="cheats">
 			<div class="container">
 				<div class="cheats__wrapper">
-					<div class="cheats__arraymethods">
-						<button class="collapsible cheats__name">Методы массивов</button>
-						<div class="content">
-							<p class="cheats__info">Для добавления / удаления элементов:</p>
-							<ul class="cheats__list">
-								<li class="cheats__item"><span>push</span>(...items) - добавляет элемент в конец</li>
-								<li class="cheats__item"><span>pop</span>() – извлекает элемент с конца</li>
-								<li class="cheats__item"><span>shift</span>() – извлекает элемент с начала</li>
-								<li class="cheats__item"><span>unshift</span>(...items) – добавляет элементы в начало</li>
-								<li class="cheats__item"><span>splice</span>(pos, deleteCount, ...items) – начиная с индекса pos, удаляет deleteCount элементов и вставляет items</li>
-								<li class="cheats__item"><span>slice</span>(start, end) – создаёт новый массив, копируя в него элементы с позиции start до end (не включая end)</li>
-								<li class="cheats__item"><span>concat</span>(...items) – возвращает новый массив: копирует все члены текущего массива и добавляет к нему items. Если какой-то из items является массивом, тогда берутся его элементы</li>
-							</ul>
-							<p class="cheats__info">Для поиска среди элементов:</p>
-							<ul class="cheats__list">
-								<li class="cheats__item"><span>indexOf</span> / <span>lastIndexOf</span>(item, pos) – ищет item, начиная с позиции pos, и возвращает его индекс или -1, если ничего не найдено</li>
-								<li class="cheats__item"><span>includes</span>(value) – возвращает true, если в массиве имеется элемент value, в противном случае false</li>
-								<li class="cheats__item"><span>find</span> / <span>filter</span>(func) – фильтрует элементы через функцию и отдаёт первое/все значения, при прохождении которых через функцию возвращается true</li>
-								<li class="cheats__item"><span>findIndex</span> похож на <span>find</span>, но возвращает индекс вместо значения</li>
-							</ul>
-							<p class="cheats__info">Для перебора элементов:</p>
-							<ul class="cheats__list">
-								<li class="cheats__item"><span>forEach</span>(func) – вызывает func для каждого элемента. Ничего не возвращает</li>
-							</ul>
-							<p class="cheats__info">Для преобразования массива:</p>
-							<ul class="cheats__list">
-								<li class="cheats__item"><span>map</span>(func) – создаёт новый массив из результатов вызова func для каждого элемента</li>
-								<li class="cheats__item"><span>sort</span>(func) – сортирует массив «на месте», а потом возвращает его</li>
-								<li class="cheats__item"><span>reverse</span>() – «на месте» меняет порядок следования элементов на противоположный и возвращает изменённый массив</li>
-								<li class="cheats__item"><span>split</span> / <span>join</span> – преобразует строку в массив и обратно</li>
-								<li class="cheats__item"><span>reduce</span>(func, initial) – вычисляет одно значение на основе всего массива, вызывая func для каждого элемента и передавая промежуточный результат между вызовами.</li>
-							</ul>
-							<p class="cheats__info">Дополнительно:</p>
-							<ul class="cheats__list">
-								<li class="cheats__item"><span>Array.isArray</span>(arr) проверяет, является ли arr массивом.</li>
-							</ul>
-						</div>
+					<button class="collapsible cheats__name">Методы массивов</button>
+					<div class="content">
+						<p class="cheats__info">Для добавления / удаления элементов:</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>push</span>(...items) - добавляет элемент в конец</li>
+							<li class="cheats__item"><span>pop</span>() – извлекает элемент с конца</li>
+							<li class="cheats__item"><span>shift</span>() – извлекает элемент с начала</li>
+							<li class="cheats__item"><span>unshift</span>(...items) – добавляет элементы в начало</li>
+							<li class="cheats__item"><span>splice</span>(pos, deleteCount, ...items) – начиная с индекса pos, удаляет deleteCount элементов и вставляет items</li>
+							<li class="cheats__item"><span>slice</span>(start, end) – создаёт новый массив, копируя в него элементы с позиции start до end (не включая end)</li>
+							<li class="cheats__item"><span>concat</span>(...items) – возвращает новый массив: копирует все члены текущего массива и добавляет к нему items. Если какой-то из items является массивом, тогда берутся его элементы</li>
+						</ul>
+						<p class="cheats__info">Для поиска среди элементов:</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>indexOf</span> / <span>lastIndexOf</span>(item, pos) – ищет item, начиная с позиции pos, и возвращает его индекс или -1, если ничего не найдено</li>
+							<li class="cheats__item"><span>includes</span>(value) – возвращает true, если в массиве имеется элемент value, в противном случае false</li>
+							<li class="cheats__item"><span>find</span> / <span>filter</span>(func) – фильтрует элементы через функцию и отдаёт первое/все значения, при прохождении которых через функцию возвращается true</li>
+							<li class="cheats__item"><span>findIndex</span> похож на <span>find</span>, но возвращает индекс вместо значения</li>
+						</ul>
+						<p class="cheats__info">Для перебора элементов:</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>forEach</span>(func) – вызывает func для каждого элемента. Ничего не возвращает</li>
+						</ul>
+						<p class="cheats__info">Для преобразования массива:</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>map</span>(func) – создаёт новый массив из результатов вызова func для каждого элемента</li>
+							<li class="cheats__item"><span>sort</span>(func) – сортирует массив «на месте», а потом возвращает его</li>
+							<li class="cheats__item"><span>reverse</span>() – «на месте» меняет порядок следования элементов на противоположный и возвращает изменённый массив</li>
+							<li class="cheats__item"><span>split</span> / <span>join</span> – преобразует строку в массив и обратно</li>
+							<li class="cheats__item"><span>reduce</span>(func, initial) – вычисляет одно значение на основе всего массива, вызывая func для каждого элемента и передавая промежуточный результат между вызовами.</li>
+						</ul>
+						<p class="cheats__info">Дополнительно:</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>Array.isArray</span>(arr) проверяет, является ли arr массивом.</li>
+						</ul>
 					</div>
+				</div>
+				<div class="cheats__wrapper">
 					<button class="collapsible cheats__name">Объект Math</button>
 					<div class="content">
 						<p class="cheats__info">Свойства</p>
@@ -105,6 +105,39 @@
 							<li class="cheats__item"><span>Math.round</span> - выполняет округление до ближайшего целого числа по правилам математического округления (то есть до большего числа)</li>
 							<li class="cheats__item"><span>Math.sqrt</span> - возвращает квадратный корень числа</li>
 							<li class="cheats__item"><span>Math.trunc</span> - возвращает целую часть числа путем удаления всех дробных знаков</li>
+						</ul>
+					</div>
+				</div>
+				<div class="cheats__wrapper">
+					<button class="collapsible cheats__name">Объект String</button>
+					<div class="content">
+						<p class="cheats__info">Свойства</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+						</ul>
+						<p class="cheats__info">Методы</p>
+						<ul class="cheats__list">
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
+							<li class="cheats__item"><span>1</span> - </li>
 						</ul>
 					</div>
 				</div>
